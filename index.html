@@ -1,30 +1,2118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Projeto prático Avaliação SGI</title>
-  <link rel="stylesheet" href="style1.css">
-</head>
 
-<body>
-    <div class="container">
-        <div class="top">
-            <div class="container-top">
-                <div class="margin-top">
-                    <div class="container-top2">
-                        <div class="box">
-                            <svg class="img-box" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                                <path d="M55.9943 19.789V46.0482C55.9943 48.9173 53.5762 51.2444 50.6376 51.1639C47.8008 51.0851 45.5801 48.7218 45.5801 45.9327V19.789C45.5801 19.3703 45.9261 19.0286 46.354 19.0286H48.4689C48.8963 19.0286 49.2424 19.3686 49.2424 19.789V45.9878C49.2424 46.7736 49.8916 47.5156 50.6914 47.565C51.59 47.6197 52.3377 46.918 52.3377 46.0482V19.789C52.3377 19.3703 52.6838 19.0286 53.1112 19.0286H55.2261C55.6539 19.0286 56 19.3686 56 19.789H55.9943ZM9.20369 38.2178H0.7735C0.345625 38.2178 0 38.5578 0 38.9782V41.073C0 41.4916 0.345625 41.8316 0.773938 41.8316H3.1955V55.2396C3.1955 55.6601 3.54113 56 3.96944 56H6.01169C6.43738 56 6.78519 55.6601 6.78519 55.2396V41.8316H9.20719C9.63288 41.8316 9.98112 41.4916 9.98112 41.0712V38.9765C9.98112 38.5565 9.63506 38.2161 9.20675 38.2161L9.20325 38.2178H9.20369ZM44.5944 27.9935C44.5944 33.051 40.4075 37.1635 35.2625 37.1635H35.14C29.995 37.1635 25.8081 33.0492 25.8081 27.9935C25.8081 22.9381 29.995 18.8235 35.14 18.8235H35.2625C40.4092 18.8235 44.5944 22.9381 44.5944 27.9935ZM41.0008 27.9935C41.0008 24.8863 38.4265 22.355 35.2625 22.355H35.1356C31.9738 22.355 29.4 24.8846 29.4 27.9935C29.4 31.1028 31.9725 33.6302 35.1356 33.6302H35.2625C38.4248 33.6302 41.0008 31.1028 41.0008 27.9935ZM55.2208 52.4011H46.3518C45.9244 52.4011 45.5783 52.7411 45.5783 53.1615V55.2396C45.5783 55.6601 45.9244 56 46.3518 56H55.2208C55.6483 56 55.9943 55.6601 55.9943 55.2396V53.1615C55.9943 52.7411 55.6483 52.4011 55.2208 52.4011ZM0.773938 17.7713H4.98488C5.411 17.7713 5.75881 17.4313 5.75881 17.0109V14.9328C5.75881 14.5141 5.41275 14.1724 4.98488 14.1724H3.66056V0.760392C3.66056 0.339955 3.31494 1.73866e-05 2.88663 1.73866e-05H0.7735C0.3465 1.73866e-05 0 0.339955 0 0.760392V17.0126C0 17.4313 0.345625 17.773 0.773938 17.773V17.7713ZM49.2389 3.59714H55.2208C55.6483 3.59714 55.9943 3.25721 55.9943 2.83677V0.760392C55.9943 0.339955 55.6483 1.73866e-05 55.2208 1.73866e-05H46.3518C45.9244 1.73866e-05 45.5783 0.339955 45.5783 0.760392V17.0126C45.5783 17.4313 45.9244 17.773 46.3518 17.773H55.2208C55.6483 17.773 55.9943 17.4331 55.9943 17.0126V14.9345C55.9943 14.5158 55.6483 14.1741 55.2208 14.1741H49.2389V10.6881H54.9342C55.3621 10.6881 55.7082 10.3482 55.7082 9.92777V7.84964C55.7082 7.43095 55.3621 7.08927 54.9342 7.08927H49.2389V3.59714ZM6.78737 16.8044L11.7946 0.549955C11.8451 0.38963 11.9458 0.249727 12.0817 0.150758C12.2175 0.0517885 12.3816 -0.00104012 12.5497 1.73866e-05H15.2114C15.3713 -0.00105656 15.5275 0.0476461 15.6584 0.139369C15.7894 0.231092 15.8885 0.361287 15.9421 0.511892L21.6606 16.7563C21.8374 17.259 21.4576 17.7835 20.9147 17.7835H18.6988C18.539 17.7843 18.3829 17.7354 18.252 17.6438C18.1212 17.5521 18.022 17.4221 17.9681 17.2716L17.1959 15.0785C17.1408 14.9251 17.0395 14.7926 16.9059 14.6994C16.7722 14.6061 16.6129 14.5567 16.45 14.5578H11.8856C11.5378 14.5578 11.2311 14.7805 11.1304 15.1078L10.472 17.2428C10.4222 17.3998 10.3235 17.5368 10.1903 17.6337C10.0572 17.7307 9.89648 17.7826 9.73175 17.7818H7.52238C7.00306 17.7818 6.63119 17.29 6.78169 16.8018L6.78737 16.8044ZM12.4119 10.9629H15.7491L14.1903 6.53408C14.1212 6.33677 13.8351 6.34245 13.7734 6.54152L12.4119 10.9611V10.9629ZM22.7872 17.0126V0.774392C22.7872 0.356142 23.1328 0.0140174 23.5611 0.0140174H37.7996C41.3258 0.0140174 44.3638 2.84727 44.3839 6.31096C44.3971 8.69971 43.0561 10.7866 41.0734 11.876L44.17 16.597C44.5012 17.1019 44.1328 17.7686 43.5212 17.7686H41.0064C40.7439 17.7686 40.4985 17.6374 40.3572 17.4217L37.247 12.6823H27.2217C26.7956 12.6823 26.4478 13.0222 26.4478 13.4426V17.0122C26.4478 17.4309 26.1021 17.7726 25.6742 17.7726H23.5594C23.1332 17.7726 22.785 17.4326 22.785 17.0122H22.7872V17.0126ZM26.4478 9.08733H37.9391C39.6095 9.08733 40.943 7.63264 40.6954 5.94564C40.4967 4.58589 39.2411 3.61377 37.8407 3.61377H26.4482V9.08689L26.4478 9.08733ZM0 36.2001V19.7908C0 19.3708 0.345625 19.0304 0.773938 19.0304H15.7211C20.8434 19.0304 24.9931 23.1998 24.8386 28.266C24.6921 33.1424 20.4899 36.9587 15.5256 36.9587H0.774375C0.345625 36.9587 0 36.6188 0 36.1983V36.2001ZM3.58794 33.4329H15.5851C18.5819 33.4329 21.1374 31.1483 21.2507 28.2039C21.3701 25.1095 18.844 22.5558 15.7207 22.5558H3.58837L3.58794 33.4329ZM14.8299 41.8241H43.5956C44.0234 41.8241 44.3691 41.4842 44.3691 41.0638V38.9856C44.3691 38.5656 44.0234 38.2253 43.5956 38.2253H11.9451C11.5194 38.2253 11.1716 38.5652 11.1716 38.9856V55.2379C11.1716 55.6583 11.5172 55.9983 11.9451 55.9983H43.5956C44.0234 55.9983 44.3691 55.6583 44.3691 55.2379V53.1598C44.3691 52.7393 44.0234 52.3994 43.5956 52.3994H14.8313V48.9138H43.3199C43.7474 48.9138 44.0934 48.5739 44.0934 48.1535V46.0753C44.0934 45.6549 43.7478 45.315 43.3195 45.315H14.8326V41.8185L14.8299 41.8241Z" fill="#ED0000"/>
-                            </svg>
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <title>La Redoute | Grandes descontos em Moda &amp; Casa </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <meta name="format-detection" content="telephone=no">
+    
+            <meta name="description" content="A melhor loja online de moda e casa com ofertas todos os dias. Aproveite a oferta de hoje que temos para si.">
+
+    <meta name="apple-mobile-web-app-title" content="La Redoute">
+    <meta name="author">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="widget.css">
+    <link rel="stylesheet" href="master.css">
+
+    
+
+
+
+    
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://www.laredoute.pt/","potentialAction":{"@type":"SearchAction","target":"https://www.laredoute.pt/psrch/psrch.aspx?kwrd={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="preload" as="style" type="text/css" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=block">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=block" rel="stylesheet">
+
+
+        <script type="text/javascript">
+
+            window.didomiConfig = {
+                languages: {
+                    enabled: ['pt'],
+                    default: 'pt'
+                },
+                user: {
+                    bots: {
+                        consentRequired: false
+                    }
+                }
+            };
+
+            window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+  var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("2297ccad-8015-40bb-8de5-81c2ee1dc3d1","7ZqDjRTU")})();
+        </script>
+
+    <link href="/css/6/pt-PT/mastercss?v=IXthdie-eYwJJiUQdtJcQSOoqmgU4366AUZL6CfZIyk1" rel="stylesheet"/>
+
+    <link href="/css/6/pt-PT/indexcss?v=AnBJQq1tCaU64_gYCIfOSF4n_Z2mjPMsFg0cHr2b-ck1" rel="stylesheet"/>
+
+
+<link href="/css/6/pt-PT/widgetscss?v=sapRmyToWy2ZObV03IaBD-uPEyPcX2SyYhnXoJV7vZU1" rel="stylesheet"/>
+
+    <script type="text/javascript">var contextInfo={"Customer":{"IsLoggedIn":false,"IsIdentified":false,"IsLoyaltyProgram":false,"LRRecoId":"00000000-0000-0000-0000-000000000000"},"PageType":"HomePage","PageCategory":"Unknown","Products":[],"ShoppingCart":{"Line":[],"TotalToPay":0,"DeliveryMethods":[]},"CategoryId":0,"VirtualSite":"Laredoute","RecoContext":"default","BreadCrumbDetail":[],"Breadcrumb":[],"SocialProfile":{"Facebook":{"AppId":"221351567930017"}},"Configuration":{"ConfigCookieManager":{"InitSegmentationCookie":true,"EnableSegmentationCookie":false,"IsPrivacyCookieAccepted":false},"ConfigFlags":{"EnableVendorReviews":true,"CheckCouponDisabled":false,"CheckCouponDisabledIfLoggedIn":false,"SetUpDirectDebitEnabled":false,"IsCerberus":false,"LoadGlobalE":false,"CheckoutBackOffice":"","CreateBrowserCookiesOnPayment":true,"EnableGetCustomerPersonalisationData":true,"EnableUIRTA":false,"EnableCVV":true,"RegisterIsPhoneMandatory":true,"GetNearestPlaces_Enabled":false,"LogoutWithRedirect_Enabled":true,"GoogleMapsApiKey":"AIzaSyBE9oxr2XMfR1OnAAvmOS-O-AlVFS7KNm4","PcaPreditApiKey":"YW91-XU82-ZF21-RM25","TriggerSyteEvent":false},"ConfigSiteSelectorAfricaShop":{"IsEnabled":false,"IsActivated":false}},"Privacy":{"HasConsentPersonalization":false,"HasConsentAnalytics":false,"HasConsentFunctional":true,"HasConsentSocial":false,"HasConsentAdvertising":false},"EnvironmentLocale":"pt-PT","EnvironmentLocaleGlobalE":"pt-PT","EnvironmentSiteId":6,"EnvironmentBaseDirectory":"","Agent":{"ProductPage":"ProductPageV2","ProductList":"ProductListV2","ProductDetails":{"Version":"V001"}},"LocalContent":{},"ApplicationPath":"","GlobalMediaUrl":"https://cdn.laredoute.com","MediaUrl":"https://cdn.laredoute.com"};</script>
+    <script src="/js/6/pt-PT/masterpagejs_main?v=KyWEIolQ53I5n74EePvGvDXW9vHm2sUwiJqaQUxy-5g1"></script>
+
+
+<script src="/js/6/pt-PT/widgetsjs?v=ORWvA28PZUTzc7oERHtelEsczNxFSLR-vx1glcfDdkc1"></script>
+
+
+        <link rel="preconnect" href="https://cdn.laredoute.com" />
+
+        <script type="text/javascript">
+            var siteSelectorConfig =
+            {
+                SupportedLanguages: ["fr", "it", "en", "es", "pt", "pl", "no", "se", "nl", "ru", "de"],
+                RedirectPreferenceDuration: '0',
+                VisitorCountryCode: 'PT',
+                Countries: [{CountryCode: "AF",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ZA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AX",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "DZ",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "DE",SiteUrl: "laredoute.de",LayerType: "normal"},{CountryCode: "AD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AQ",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BB",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "BY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BE",SiteUrl: "laredoute.be",LayerType: "normal"},{CountryCode: "BZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BJ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BW",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BF",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KY",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "KH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CF",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CN",SiteUrl: "laredoute.cn",LayerType: "normal"},{CountryCode: "CX",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CD",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CK",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "KR",SiteUrl: "laredoute.co.kr",LayerType: "normal"},{CountryCode: "KP",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HR",SiteUrl: "laredoute.hr",LayerType: "normal"},{CountryCode: "CU",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "CW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "DK",SiteUrl: "laredoute.se",LayerType: "normal"},{CountryCode: "DJ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "DO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "DM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "EG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "EC",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ER",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "ES",SiteUrl: "laredoute.es",LayerType: "normal"},{CountryCode: "EE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "US",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ET",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "FO",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "FJ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "FI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "FR",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "GA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "GE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GR",SiteUrl: "laredoute.gr",LayerType: "normal"},{CountryCode: "GD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GP",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "GU",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "GT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "GQ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "HT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "VI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "IN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ID",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IR",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "IQ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IT",SiteUrl: "laredoute.it",LayerType: "normal"},{CountryCode: "JM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "JP",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "JE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "JO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "KW",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LB",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LR",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LY",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LU",SiteUrl: "laredoute.be",LayerType: "normal"},{CountryCode: "MO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ML",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MP",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MA",SiteUrl: "laredoute.ma",LayerType: "normal"},{CountryCode: "MH",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MQ",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "MU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "YT",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "MX",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "FM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "MN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ME",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NA",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NR",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NP",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "NI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "NG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NU",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NO",SiteUrl: "laredoute.no",LayerType: "normal"},{CountryCode: "NC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "NZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "OM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "PS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "PA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "NL",SiteUrl: "laredoute.nl",LayerType: "normal"},{CountryCode: "PE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PL",SiteUrl: "laredoute.pl",LayerType: "normal"},{CountryCode: "PF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "PR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PT",SiteUrl: "laredoute.pt",LayerType: "normal"},{CountryCode: "QA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "RE",SiteUrl: "la-redoute.re",LayerType: "normal"},{CountryCode: "RO",SiteUrl: "laredoute.ro",LayerType: "normal"},{CountryCode: "GB",SiteUrl: "laredoute.co.uk",LayerType: "normal"},{CountryCode: "RU",SiteUrl: "laredoute.ru",LayerType: "normal"},{CountryCode: "RW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "EH",SiteUrl: "laredoute.ma",LayerType: "normal"},{CountryCode: "BL",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "KN",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MF",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "SX",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "PM",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "VA",SiteUrl: "laredoute.com",LayerType: ""},{CountryCode: "VC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SH",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LC",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SB",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "WS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "ST",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "RS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SL",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "SG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SI",SiteUrl: "laredoute.si",LayerType: "normal"},{CountryCode: "SO",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SD",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SE",SiteUrl: "laredoute.se",LayerType: "normal"},{CountryCode: "CH",SiteUrl: "laredoute.ch",LayerType: "normal"},{CountryCode: "SR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SJ",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SY",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TJ",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TW",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "TH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TO",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "TT",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TC",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "WF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "YE",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "ZM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ZW",SiteUrl: "laredoute.com",LayerType: "normal"}]
+            };
+        </script>
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" />
+
+    
+
+
+    
+
+
+            <link rel="canonical" href="https://www.laredoute.pt/" />
+<link rel="alternate" href="https://www.laredoute.fr/" hreflang="fr-fr" /> <link rel="alternate" href="https://www.laredoute.be/" hreflang="fr-be" /> <link rel="alternate" href="https://www.laredoute.be/nl/" hreflang="nl-be" /> <link rel="alternate" href="https://www.laredoute.ch/" hreflang="fr-ch" /> <link rel="alternate" href="https://www.laredoute.ch/de/" hreflang="de-ch" /> <link rel="alternate" href="https://www.laredoute.ch/en/" hreflang="en-ch" /> <link rel="alternate" href="https://www.laredoute.ch/it/" hreflang="it-ch" /> <link rel="alternate" href="https://www.laredoute.co.uk/" hreflang="en-gb" /> <link rel="alternate" href="https://www.laredoute.lu/" hreflang="fr-lu" /> <link rel="alternate" href="https://www.laredoute.nl/" hreflang="nl-nl" /> <link rel="alternate" href="https://www.laredoute.com/" hreflang="en" /> <link rel="alternate" href="https://www.laredoute.com/fr/" hreflang="fr-ca" /> <link rel="alternate" href="https://www.laredoute.com/fr/" hreflang="fr-ma" /> <link rel="alternate" href="https://www.laredoute.com/fr/" hreflang="fr-dz" /> <link rel="alternate" href="https://www.laredoute.com/fr/" hreflang="fr-tn" /> <link rel="alternate" href="https://www.laredoute.com/de/" hreflang="de" /> <link rel="alternate" href="https://www.laredoute.ru/" hreflang="ru" /> <link rel="alternate" href="https://www.laredoute.pt/" hreflang="pt" /> <link rel="alternate" href="https://www.laredoute.es/" hreflang="es" /> <link rel="alternate" href="https://www.laredoute.it/" hreflang="it" /> <link rel="alternate" href="https://www.laredoute.de/" hreflang="de-de" />
+
+
+
+    <script type="text/javascript" src="/js/6/pt-PT/masterpagejs_async?v=DhJakO1js0c22jWik2hr4YnlSzqOQKj6FDLUB9uLpUU1" async defer onload="(typeof AsyncLoader_master === 'undefined' ? AsyncLoader_master = $.Deferred() : ''); AsyncLoader_master.resolve(event);"></script>
+
+
+
+    <script id="analyticsDataLayer" type="text/json">
+        {
+"channel":"hp",
+"pageName":"PT:RE:HP:LaRedoute",
+"server":"iis-prd-0003QL",
+"eVar1":"PT_Mainsite_PT",
+"eVar45":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0",
+"eVar92":"962d73a8-bef1-4081-b758-84223d55e39c",
+"prop1":"PT",
+"prop13":"12639_12783_12784_12785_12786_12787_12789_12790_12791_12883_12884_15212_12908_30507_34430_30501_30504_30498_30505_30502_30503_41226_31194_31176_31177_31180_31179_31216_31217_31215_30816",
+"prop17":"443",
+"prop55":"mainsite",
+"events":"",
+"products":"",
+"virtualSite":"laredoute",
+"pageType":1,
+"reportSuite":"redouteprodptmobile",
+"currencyCode":"EUR"
+}
+    </script>
+
+    <script id="LR_dataLayer" type="text/json">
+        {
+  "channel": "hp",
+  "pageName": "LaRedoute",
+  "pageType": "HomePage",
+  "server": "iis-prd-0003QL",
+  "country": "PT",
+  "language": "",
+  "countryCode": "PT",
+  "siteVersion": "Mainsite",
+  "visitorGuid": "962d73a8-bef1-4081-b758-84223d55e39c",
+  "breadcrumb": [],
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0",
+  "reportSuite": "redouteprodptmobile",
+  "currencyCode": "EUR",
+  "isLoggedIn": false,
+  "isIdentified": false,
+  "isLRAndMe": false,
+  "appOwner": "false",
+  "appActive": "",
+  "appHighPotential": "false",
+  "earlyBirdsAPITrackerKey": "598185ba63ed1112c8040821",
+  "earlyBirdsAPITrackerDataSource": "598185ba63ed1112c8040822",
+  "hasLoyaltyInCart": false,
+  "loyaltyId": "510484307"
+}
+    </script>
+    <script type="text/javascript" id="registerRedirectionsUrlsData">
+        var registerRedirectionsUrls =
+        {
+            "AccountCreationPersonalUrl": "/customer/signup",
+            "AccountCreationBasketUrl": "/customer/signup/from_basket",
+            "AccountCreationBtobUrl": "/customer/signup/b2b",
+            "AccountCreationLogAsUrl": "/webadvisor/customerregister.aspx"
+        };
+    </script>
+
+
+<script src="//assets.adobedtm.com/409567f830ae9b37911ba9d4d8af4ddef0bc818a/satelliteLib-34bae0f2826b07df150b94cac705e83a5842ddc2.js" ></script>
+    <script>
+        window.reach5 = window.reach5 || function () { (reach5.q = reach5.q || []).push(arguments) };
+    </script>
+
+
+<script id="tealiumIqParams" type="text/javascript">var utag_data = {"env_template":"HP","env_channel":"MOBILE","env_language":"PT","env_country":"PT","page_breadcrumb_id":[],"page_breadcrumb_label":[],"pageType":"HomePage","currency":"EUR","event_id":"bc3c69a7-63ed-4cc4-ad04-3528433dbe4d","isBot":false,"isCerberus":false,"appOwner":"false","appOwner_noOrder":"false","appActive":"","appHighPotential":"false"};</script>
+
+
+    </head>
+
+<body class="MobileV3_Home mobile-embedded laredoute is-desktop country-pt"
+      data-siteid="6"
+      data-countrycode="pt-PT" data-country="pt"
+      data-enablebasketitemcount="true"
+      data-enablewishlistitemcount="true"
+      data-apiloggingenabled="false"
+      data-universeid="Home"
+      data-pagename="MobileV3_Home">
+
+    <form>
+        <input type="hidden" id="antiForgeryToken" name="antiForgeryToken" value="IilpJLvX9EJt_kjYsxRKJckO5yJw5mdZm3mTUj6o7uQFDOsqaEjFzxRus_aO1sPKs6-THT6SWLp-k8ckpkXDes597BrXZzr6IsNRQcbBqrA1:YenIYDIHrwt__FyzIUqu7TyKjSBG_GCfybsvw15H1ZEvCg2fqZrAQKAqGpLU4zdhZ9U5MjHIjfJZk_SsokyFwZ6gJ2L4VIj141M44TV_HGk1" />
+    </form>
+
+<script type="text/javascript">(function(a,b,c,d){a='https://tags.tiqcdn.com/utag/redoute/main/prod/utag.js';b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);})();</script>
+
+    <nav role="navigation" class="skip-links" aria-label="">
+        <a class="skip-link" href="#headerMenuPanel" title="" tabindex="0"></a>
+        <a class="skip-link" href="#headerSearchField" title="" tabindex="0"></a>
+        <a class="skip-link" href="#corePage" title="" tabindex="0"></a>
+        <a class="skip-link" href="#footer" title="" tabindex="0"></a>
+    </nav>
+
+
+
+
+
+    <div id="website-container">
+        <div id="website">
+            <header id="header" class='header external-hide  ' role="banner">
+
+
+                    <div class="header__decor" aria-hidden="true"></div>
+
+
+                        
+
+
+
+    <div id="headerWrapper" class="header__wrapper" >
+
+        
+        <div id="headerLogo" class="header__logo header__logo--large headerLogo">
+            <a href="/" 
+                class="header__logoLink | laredoute user-log"
+                data-cerberus="img_header_logo" 
+                title="Voltar para a p&#225;gina inicial do site da La Redoute">
+                    <svg
+                        
+                        width="104"
+                        height="104"
+                        class="header__logoLinkSvg"
+                        viewbox="0 0 128 128" 
+                        fill="currentColor"
+                        preserveAspectRatio="xMinYMin meet"><path d="M127.987 45.232v60.021c0 6.558-5.527 11.877-12.244 11.693-6.484-.18-11.56-5.582-11.56-11.957V45.232c0-.957.791-1.738 1.769-1.738h4.834c.977 0 1.768.777 1.768 1.738v59.883c0 1.796 1.484 3.492 3.312 3.605 2.054.125 3.763-1.479 3.763-3.467V45.232c0-.957.791-1.738 1.768-1.738h4.834c.978 0 1.769.777 1.769 1.738h-.013ZM21.037 87.355H1.768C.79 87.355 0 88.132 0 89.093v4.788c0 .957.79 1.734 1.769 1.734h5.535v30.647c0 .961.79 1.738 1.769 1.738h4.668c.973 0 1.768-.777 1.768-1.738V95.615h5.536c.973 0 1.769-.777 1.769-1.738v-4.788c0-.96-.791-1.738-1.77-1.738l-.008.004Zm80.893-23.37c0 11.56-9.57 20.96-21.33 20.96h-.28c-11.76 0-21.33-9.404-21.33-20.96 0-11.555 9.57-20.96 21.33-20.96h.28c11.764 0 21.33 9.405 21.33 20.96Zm-8.214 0c0-7.102-5.884-12.888-13.116-12.888h-.29c-7.227 0-13.11 5.782-13.11 12.888 0 7.107 5.88 12.884 13.11 12.884h.29c7.228 0 13.116-5.777 13.116-12.884Zm32.503 55.789h-20.272c-.977 0-1.768.777-1.768 1.738v4.75c0 .961.791 1.738 1.768 1.738h20.272c.977 0 1.768-.777 1.768-1.738v-4.75c0-.961-.791-1.738-1.768-1.738ZM1.769 40.62h9.625c.974 0 1.769-.777 1.769-1.738v-4.75c0-.957-.791-1.738-1.769-1.738H8.367V1.738C8.367.777 7.577 0 6.598 0h-4.83C.792 0 0 .777 0 1.738v37.148c0 .957.79 1.738 1.769 1.738v-.004ZM112.546 8.222h13.673c.977 0 1.768-.777 1.768-1.738V1.738c0-.961-.791-1.738-1.768-1.738h-20.272c-.977 0-1.768.777-1.768 1.738v37.148c0 .957.791 1.738 1.768 1.738h20.272c.977 0 1.768-.777 1.768-1.738v-4.75c0-.957-.791-1.738-1.768-1.738h-13.673V24.43h13.018c.978 0 1.769-.777 1.769-1.738v-4.75c0-.957-.791-1.738-1.769-1.738h-13.018V8.222ZM15.514 38.41 26.959 1.257A1.798 1.798 0 0 1 28.685 0h6.084a1.76 1.76 0 0 1 1.67 1.17L49.51 38.3c.404 1.149-.464 2.348-1.705 2.348H42.74a1.765 1.765 0 0 1-1.67-1.17l-1.765-5.013a1.798 1.798 0 0 0-1.705-1.19H27.167c-.795 0-1.496.509-1.726 1.257l-1.505 4.88a1.766 1.766 0 0 1-1.692 1.232h-5.05c-1.187 0-2.037-1.124-1.693-2.24l.013.005ZM28.37 25.058h7.628l-3.563-10.123c-.158-.451-.812-.438-.953.017L28.37 25.054v.004Zm23.715 13.828V1.77c0-.956.79-1.738 1.769-1.738h32.545c8.06 0 15.004 6.476 15.05 14.393.03 5.46-3.035 10.23-7.567 12.72l7.078 10.791c.757 1.154-.085 2.678-1.483 2.678h-5.748c-.6 0-1.161-.3-1.484-.793l-7.109-10.833H62.221c-.974 0-1.769.777-1.769 1.738v8.159c0 .957-.79 1.738-1.768 1.738H53.85c-.974 0-1.77-.777-1.77-1.738h.005Zm8.367-18.115h26.266c3.818 0 6.866-3.325 6.3-7.181-.454-3.108-3.324-5.33-6.525-5.33h-26.04V20.77ZM0 82.743V45.236c0-.96.79-1.738 1.769-1.738h34.165c11.708 0 21.193 9.53 20.84 21.11-.335 11.146-9.94 19.869-21.287 19.869H1.77C.79 84.477 0 83.7 0 82.739v.004Zm8.201-6.325h27.422c6.85 0 12.691-5.222 12.95-11.952.273-7.073-5.501-12.91-12.64-12.91H8.202v24.862Zm25.696 19.18h65.75c.978 0 1.768-.777 1.768-1.738v-4.75c0-.96-.79-1.738-1.768-1.738H27.303c-.973 0-1.768.777-1.768 1.738v37.148c0 .961.79 1.738 1.768 1.738h72.344c.978 0 1.768-.777 1.768-1.738v-4.75c0-.961-.79-1.738-1.768-1.738H33.9v-7.967h65.117c.977 0 1.768-.777 1.768-1.738v-4.75c0-.961-.79-1.738-1.769-1.738H33.903v-7.992l-.005.013Z" fill="#ff3f52" /></svg>
+                <div class="sr-only">La Redoute</div>
+            </a>
+        </div>
+    
+        <div id="headerContent" class="header__content ">
+            <div id="headerNavigation" class="header__navigation header__navigation--desktop">
+                <nav id="headerNavigationComponent" class="header__navigationComponent" role="navigation" aria-label="Menu principal">
+                    <div class="header__menu">
+                        <button class="header__button"
+                                aria-expanded="false"
+                                aria-controls="headerMenuPanel"
+                                aria-describedby="tooltipMenu"
+                                data-cerberus="header_open-menu"
+                                id="headerMenu">
+                            <i class="header__icon" aria-hidden="true">
+                                <svg class="header__menuButton" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9a1 1 0 0 0 0 2h20a1 1 0 1 0 0-2H6ZM5 17a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1ZM5 24a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" fill="#ffffff" /></svg>
+                            </i><span class="sr-only">Menu</span><span class="header__menu--text">Menu</span>
+                        </button>
+
+                            <nav id="headerMenuPanel" class="menu__panel" role="dialog" aria-modal="true" aria-describedby="menuPanelTitle">
+                                <div class="menu__listWrapper modal__panelElement">
+                                    <div class="cultureSwitch">
+
+                                    </div>
+                                    <div id="menuPanelTitle" class="sr-only">Menu</div>
+                                    <div data-level="root">
+                                        <div id="menuMain">
+            <button id="menuUniverseSelection" role="tablist">
+            <span class="sr-only"></span>
+                <span class="segmentedPart selected title-xxs-default"
+                    data-universe="Casa"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="universeCasa"
+                    aria-orientation="horizontal"
+                >
+                        <img src="https://cdn.laredoute.com/generic/menuV4/images/6/sofa.png" loading="lazy" fetchpriority="high" width="24" height="24" />
+                    Casa
+                </span>
+                <span class="segmentedPart  title-xxs-default"
+                    data-universe="Moda"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="universeModa"
+                    aria-orientation="horizontal"
+                >
+                        <img src="https://cdn.laredoute.com/generic/menuV4/images/6/hanger.png" loading="lazy" fetchpriority="high" width="24" height="24" />
+                    Moda
+                </span>
+        </button>
+
+        <div id="universeCasa" class="universe open">
+                <ul>
+                                <li class="titleBlock title"
+                                    data-id="Home--1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-label="Neste momento">
+                                    Neste momento
+                                </li>
+                                <li class="menuSelectionList event"
+                                    data-id="Home-280747"
+                                    data-menuid="953d2e4c-6c0c-4693-a41b-317d74be2cab"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-background=""
+                                    data-label="Natal"
+                                    role="menuitem"
+                                >
+                                        <style>
+                                            .menuSelectionList a.lvl1link_f31da909-19bb-4675-920e-e16decd627cb::after {
+                                                background-color: #ffffff;
+                                            }
+                                        </style>
+                                    <a href="/pplp/100/97172/278261/cat-280747.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="-1"
+                                        data-id="280747"
+                                        
+                                        class="event  lvl1link_f31da909-19bb-4675-920e-e16decd627cb"
+                                        style="color:#ffffff;background-color:#D23948;">
+                                        Natal
+                                    </a>
+                                </li>
+                                <li class="titleBlock title"
+                                    data-id="Home--1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-label="Categorias de casa">
+                                    Categorias de casa
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-392588"
+                                    data-menuid="d6b8ef48-b492-4caf-9bb0-5785548b696d"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/menuV4/images/1/L1-header-piece.png"
+                                    data-label="Divis&#245;es"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/cat-392588.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="392588"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/menuV4/images/1/shopByRoom-1.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/menuV4/images/1/shopByRoom-1.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Divis&#245;es
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-84100"
+                                    data-menuid="4ffdc549-b72d-4f21-a8cb-269e2740a44b"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-Linen.png"
+                                    data-label="T&#234;xtil-lar"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/cat-84100.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="84100"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Homelinen-0825.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Homelinen-0825.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        T&#234;xtil-lar
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-385993"
+                                    data-menuid="14e4717a-9af0-4bdb-8fca-7c43fa177e50"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-Couch.png"
+                                    data-label="Sof&#225;s, Cadeir&#245;es"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/cat-385993.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="385993"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L2Sofa.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L2Sofa.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Sof&#225;s, Cadeir&#245;es
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-385998"
+                                    data-menuid="aa81b258-8dde-4c0a-80c6-445a1ecaae21"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-tableChair.png"
+                                    data-label="Mesas, cadeiras"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/cat-385998.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="385998"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/menuV4/images/1/L1-tablechair.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/menuV4/images/1/L1-tablechair.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Mesas, cadeiras
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75326"
+                                    data-menuid="cd7b8a35-7473-4622-9b2e-fbc930621661"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-Bed.png"
+                                    data-label="Camas, edredons, almofadas, colch&#245;es"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/75363/cat-75326.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75326"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Bed.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Bed.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Camas, edredons, almofadas, colch&#245;es
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75363"
+                                    data-menuid="9096ab3e-48b6-4e19-9e7d-a69c3b438f12"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-furniture.png"
+                                    data-label="Mobili&#225;rio"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/cat-75363.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75363"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/menuV4/images/1/L1-furniture_OK.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/menuV4/images/1/L1-furniture_OK.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Mobili&#225;rio
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75509"
+                                    data-menuid="9f15115d-2f8e-4d7d-b889-783a08f3e837"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-carpet.png"
+                                    data-label="Tapetes, passadeiras"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/75363/cat-75509.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75509"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Carpet-0825.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Carpet-0825.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Tapetes, passadeiras
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75443"
+                                    data-menuid="81e8e4a1-1b16-411e-aefe-e885267e9e65"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-decoration.png"
+                                    data-label="Decora&#231;&#227;o"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/75363/cat-75443.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75443"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Decoration-0825.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Decoration-0825.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Decora&#231;&#227;o
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75474"
+                                    data-menuid="b9a28850-aa18-4008-944f-6914ce369e01"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-lightfixture.png"
+                                    data-label="Ilumina&#231;&#227;o"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/75363/cat-75474.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75474"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Lamp-0825.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Lamp-0825.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Ilumina&#231;&#227;o
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75364"
+                                    data-menuid="c2a7e5cf-606d-4cde-ad59-050d4713060f"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-tableware.png"
+                                    data-label="Loi&#231;as, talheres"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/75363/cat-75364.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75364"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Tableware-0825.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Tableware-0825.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Loi&#231;as, talheres
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-75067"
+                                    data-menuid="afaee24c-30e1-4360-9231-1db2ff2d7bf3"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-GardenPets.png"
+                                    data-label="Jardim, varandas"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/75363/cat-75067.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="75067"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/menuV4/images/1/L1-outdoor.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/menuV4/images/1/L1-outdoor.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Jardim, varandas
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Home-85417"
+                                    data-menuid="0a51172c-dfad-4a97-8775-5e6fa7cae02d"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background=""
+                                    data-label="Outlet"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/1326/cat-85417.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="85417"
+                                        
+                                        class="default  "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/menuV4/images/1/L1-outlet V2.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/menuV4/images/1/L1-outlet V2.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Outlet
+                                    </a>
+                                </li>
+                                <li class="menu__listItemSeparator" role="separator" aria-orientation="horizontal"></li>
+                                <li class="menuSelectionList event"
+                                    data-id="Home-84100"
+                                    data-menuid="12b706bf-ca50-467d-9f06-938cb5feccaf"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-background=""
+                                    data-label="T&#234;xtil-lar"
+                                    role="menuitem"
+                                >
+                                        <style>
+                                            .menuSelectionList a.lvl1link_37eaf497-7559-4049-8803-e6961a934591::after {
+                                                background-color: #12151b;
+                                            }
+                                        </style>
+                                    <a href="/pplp/100/cat-84100.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="-1"
+                                        data-id="84100"
+                                        
+                                        class="event  lvl1link_37eaf497-7559-4049-8803-e6961a934591"
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                        T&#234;xtil-lar
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList event"
+                                    data-id="Home-387871"
+                                    data-menuid="03ad8301-db12-4715-8ab9-d8070aa22698"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-background=""
+                                    data-label="Top Vendas"
+                                    role="menuitem"
+                                >
+                                        <style>
+                                            .menuSelectionList a.lvl1link_2402d023-85fb-4321-91d3-a5d880398d44::after {
+                                                background-color: #12151b;
+                                            }
+                                        </style>
+                                    <a href="/pplp/cat-387871.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="-1"
+                                        data-id="387871"
+                                        
+                                        class="event  lvl1link_2402d023-85fb-4321-91d3-a5d880398d44"
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                        Top Vendas
+                                    </a>
+                                </li>
+                                <li class="titleBlock title"
+                                    data-id="Home--1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-label="As nossas marcas">
+                                    As nossas marcas
+                                </li>
+                                <div class="menuBrandCarousel">
+                                    <div class="menuBrandCarousel_wrapper" data-lvl="1">
+                                            <a href="/hub-lri.aspx" data-lvl="1">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=160,height=160,fit=crop,dpr=1/generic/logos/brands/LRI-2_v2.jpg" alt="La Redoute Int&#233;rieurs" title="La Redoute Int&#233;rieurs" id="la-redoute-interieurs" />
+                                            </a>
+                                            <a href="/pplp/cat-85201.aspx" data-lvl="1">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=160,height=160,fit=crop,dpr=1/generic/logos/brands/AMPM.jpg" alt="A M P M" title="A M P M" id="ampm" />
+                                            </a>
+                                    </div>
+                                </div>
+                </ul>
+                <ul class="menu__listFooter">
+                        <li class="menuSelectionList alldevices"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Ajuda e contactos"
+                            role="menuitem">
+                            <a href="/services/faq.aspx#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="alldevices ">
+                                    <span class="menu_icon alldevices">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/menu/images/1/4432a3ae1a0f0.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/menu/images/1/4432a3ae1a0f0.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Ajuda e contactos</span>
+                            </a>
+                        </li>
+                        <li class="menuSelectionList webonly"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Blog | Inspira&#231;&#227;o"
+                            role="menuitem">
+                            <a href="/inspiration/#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="webonly ">
+                                    <span class="menu_icon webonly">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/generic/menuV3/images/6/catalog-128px.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/generic/menuV3/images/6/catalog-128px.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Blog | Inspira&#231;&#227;o</span>
+                            </a>
+                        </li>
+                        <li class="menuSelectionList alldevices"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Profissionais"
+                            role="menuitem">
+                            <a href="/b2b.aspx#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="alldevices ">
+                                    <span class="menu_icon alldevices">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/menu/images/6/4432a4a99de3e.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/menu/images/6/4432a4a99de3e.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Profissionais</span>
+                            </a>
+                        </li>
+                        <li class="menuSelectionList webonly"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Descubra a nossa App"
+                            role="menuitem">
+                            <a href="/app.aspx#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="webonly ">
+                                    <span class="menu_icon webonly">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/generic/menuV3/images/6/smartphone-128px.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/generic/menuV3/images/6/smartphone-128px.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Descubra a nossa App</span>
+                            </a>
+                        </li>
+                </ul>
+        </div>
+        <div id="universeModa" class="universe ">
+                <ul>
+                                <li class="titleBlock title"
+                                    data-id="Fashion--1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-label="Neste momento">
+                                    Neste momento
+                                </li>
+                                <li class="menuSelectionList event"
+                                    data-id="Fashion-280747"
+                                    data-menuid="0be2c160-00c4-4d25-ab32-ddc84901c5b0"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-background=""
+                                    data-label="Natal"
+                                    role="menuitem"
+                                >
+                                        <style>
+                                            .menuSelectionList a.lvl1link_af4e02da-d228-48c7-a726-bc0a5c0ef9b7::after {
+                                                background-color: #ffffff;
+                                            }
+                                        </style>
+                                    <a href="/pplp/100/97172/278261/cat-280747.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="-1"
+                                        data-id="280747"
+                                        
+                                        class="event  lvl1link_af4e02da-d228-48c7-a726-bc0a5c0ef9b7"
+                                        style="color:#ffffff;background-color:#D23948;">
+                                        Natal
+                                    </a>
+                                </li>
+                                <li class="titleBlock title"
+                                    data-id="Fashion--1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-label="Categorias de moda">
+                                    Categorias de moda
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Fashion-157878"
+                                    data-menuid="46636987-64c9-4ab2-a5a1-290e987b9dc8"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-Women_1025.png"
+                                    data-label="Mulher"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/cat-157878.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="157878"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Women-1025ok.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Women-1025ok.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Mulher
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Fashion-368"
+                                    data-menuid="86921d32-f5ee-4c30-934b-0262e9fe4180"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/productCategorisation/images/0/HeaderNav-Kids-1025ok.png"
+                                    data-label="Crian&#231;a, Beb&#233;"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/cat-368.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="368"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Kid-1025ok.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Kid-1025ok.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Crian&#231;a, Beb&#233;
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Fashion-157938"
+                                    data-menuid="b7932398-9c80-434f-b68a-975888bad584"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/menuV4/images/1/HeaderNav-Men.png"
+                                    data-label="Homem"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/100/cat-157938.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="157938"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/productCategorisation/images/0/ImgNav-L1Men1025.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/productCategorisation/images/0/ImgNav-L1Men1025.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Homem
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList default"
+                                    data-id="Fashion-1326"
+                                    data-menuid="03c789ec-4247-4b76-a0ca-0e9b2f461459"
+                                    data-haschild="true"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="1"
+                                    data-background="https://cdn.laredoute.com/generic/menuV3/images/1/outlet-LR.jpg"
+                                    data-label="Outlet"
+                                    role="menuitem"
+                                >
+                                    <a href="/pplp/cat-1326.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="1"
+                                        data-id="1326"
+                                        role=button
+                                        class="default modal--nextPanel "
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                            <span class="menu_icon default">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=1/generic/menuV4/images/1/L1-outlet V2.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=64,height=64,fit=contain,dpr=2/generic/menuV4/images/1/L1-outlet V2.png 2x" width="64" height="64" alt="" role="presentation" />
+                                            </span>
+                                        Outlet
+                                    </a>
+                                </li>
+                                <li class="menu__listItemSeparator" role="separator" aria-orientation="horizontal"></li>
+                                <li class="menuSelectionList event"
+                                    data-id="Fashion-157879"
+                                    data-menuid="0024ed7b-7224-4819-87e0-74ec9c7e8cb1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-background=""
+                                    data-label="Malhas mulher"
+                                    role="menuitem"
+                                >
+                                        <style>
+                                            .menuSelectionList a.lvl1link_e522fa08-7654-4db1-9fad-2c15e317c14c::after {
+                                                background-color: #12151b;
+                                            }
+                                        </style>
+                                    <a href="/pplp/100/157878/201/cat-157879.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="-1"
+                                        data-id="157879"
+                                        
+                                        class="event  lvl1link_e522fa08-7654-4db1-9fad-2c15e317c14c"
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                        Malhas mulher
+                                    </a>
+                                </li>
+                                <li class="menuSelectionList event"
+                                    data-id="Fashion-387871"
+                                    data-menuid="01190d4f-541c-4c94-ac22-3ac55c2eecdb"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-background=""
+                                    data-label="Top Vendas"
+                                    role="menuitem"
+                                >
+                                        <style>
+                                            .menuSelectionList a.lvl1link_7d0c0229-5200-4652-833e-cf34c4c0d61d::after {
+                                                background-color: #12151b;
+                                            }
+                                        </style>
+                                    <a href="/pplp/cat-387871.aspx#shoppingtool=treestructureflyout"
+                                        data-lvl="-1"
+                                        data-id="387871"
+                                        
+                                        class="event  lvl1link_7d0c0229-5200-4652-833e-cf34c4c0d61d"
+                                        style="color:#12151b;background-color:#FAFAFA;">
+                                        Top Vendas
+                                    </a>
+                                </li>
+                                <li class="titleBlock title"
+                                    data-id="Fashion--1"
+                                    data-haschild="false"
+                                    data-cerberus="mainmenu-l1-universe"
+                                    data-lvl="-1"
+                                    data-label="A nossa marca exclusiva">
+                                    A nossa marca exclusiva
+                                </li>
+                                <div class="menuBrandCarousel">
+                                    <div class="menuBrandCarousel_wrapper" data-lvl="1">
+                                            <a href="/alt/laredoutecollections.aspx" data-lvl="1">
+                                                <img src="https://cdn.laredoute.com/cdn-cgi/image/width=160,height=160,fit=crop,dpr=1/generic/logos/brands/BrandNavLaRedouteCollections-min.jpg" alt="La Redoute Collections" title="La Redoute Collections" id="la-redoute-collections" />
+                                            </a>
+                                    </div>
+                                </div>
+                </ul>
+                <ul class="menu__listFooter">
+                        <li class="menuSelectionList alldevices"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Ajuda e contactos"
+                            role="menuitem">
+                            <a href="/services/faq.aspx#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="alldevices ">
+                                    <span class="menu_icon alldevices">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/menu/images/1/4432a3ae1a0f0.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/menu/images/1/4432a3ae1a0f0.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Ajuda e contactos</span>
+                            </a>
+                        </li>
+                        <li class="menuSelectionList webonly"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Blog | Inspira&#231;&#227;o"
+                            role="menuitem">
+                            <a href="/inspiration/#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="webonly ">
+                                    <span class="menu_icon webonly">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/generic/menuV3/images/6/catalog-128px.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/generic/menuV3/images/6/catalog-128px.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Blog | Inspira&#231;&#227;o</span>
+                            </a>
+                        </li>
+                        <li class="menuSelectionList alldevices"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Profissionais"
+                            role="menuitem">
+                            <a href="/b2b.aspx#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="alldevices ">
+                                    <span class="menu_icon alldevices">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/menu/images/6/4432a4a99de3e.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/menu/images/6/4432a4a99de3e.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Profissionais</span>
+                            </a>
+                        </li>
+                        <li class="menuSelectionList webonly"
+                            data-id="-1"
+                            data-haschild="false"
+                            data-cerberus="mainmenu-l1-universe"
+                            data-lvl="-1"
+                            data-background=""
+                            data-label="Descubra a nossa App"
+                            role="menuitem">
+                            <a href="/app.aspx#shoppingtool=treestructureflyout"
+                                data-id="-1"
+                                data-lvl="-1"
+                                
+                                class="webonly ">
+                                    <span class="menu_icon webonly">
+                                        <img src="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=1/generic/menuV3/images/6/smartphone-128px.png" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=24,height=24,fit=contain,dpr=2/generic/menuV3/images/6/smartphone-128px.png 2x" loading="lazy" fetchpriority="low" width="24" height="24" />
+                                    </span>
+                                <span class="menu_label">Descubra a nossa App</span>
+                            </a>
+                        </li>
+                </ul>
+        </div>
+</div>
+
+<script type="application/json" id="menuLabels">
+{
+    "HighlightTitle": "Em destaque",
+    "MenuBrandLink": "Marcas",
+    "MenuSeeAll": "Ver tudo",
+    "MenuSeeArticles": "Ver todos os artigos de |category| ",
+    "MenuSeeUniverse": "Ver categoria",
+    "SelectionTitle": "As nossas sugestões",
+    "MenuOurBrands": "",
+    "MenuTrendingToday": "",
+    "LRPlusPanelAriaCloseLabel": "",
+    "MenuAriaCloseLabel": ""
+}
+</script>
+                                    </div>
+                                </div>
+                            </nav>
+                    </div> 
+
+                        <button class="lr-icon-chevron-md-right menuLinksArrow menuLinksArrow-prev" tabindex="-1" style="display: none"></button>
+                        <button class="lr-icon-chevron-md-right menuLinksArrow menuLinksArrow-next" tabindex="-1" style="display: none"></button>
+                        <ul id="headerFeatured" class="header__links header__links--large" style="grid-area:other">
+                                <li>
+                                    <a class="header__linksItem"
+                                        href="/pplp/100/97172/278261/cat-280747.aspx"
+                                        title="Natal"
+                                        data-cerberus="header_open-featured"
+                                        >
+                                            <span class="header__linksIcon"><i></i></span>
+                                        Natal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__linksItem"
+                                        href="/pplp/100/cat-84100.aspx"
+                                        title="Têxtil-lar"
+                                        data-cerberus="header_open-featured"
+                                        >
+                                            <span class="header__linksIcon"><i></i></span>
+                                        Têxtil-lar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header__linksItem"
+                                        href="/pplp/cat-387871.aspx"
+                                        title="Top Vendas"
+                                        data-cerberus="header_open-featured"
+                                        >
+                                            <span class="header__linksIcon"><i></i></span>
+                                        Top Vendas
+                                    </a>
+                                </li>
+                                                        <li class="featured-right">
+                                    <a class="header__linksItem"
+                                        href="/b2b.aspx"
+                                        title="Profissionais"
+                                        data-cerberus="header_open-featured"
+                                        >
+                                            <span class="header__linksIcon"><i></i></span>
+                                        Profissionais
+                                    </a>
+                                </li>
+                        </ul>
+                </nav>
+            </div>
+
+            
+            <div id="headerLogo-mobile" class="header__logo header__logo--small headerLogo">
+                <a href="/" 
+                    class="header__logoLink | laredoute user-log"
+                    data-cerberus="img_header_logo" 
+                    title="Voltar para a p&#225;gina inicial do site da La Redoute"
+                >
+                        <svg
+                            width="64"
+                            height="64"
+                            class="header__logoLinkSvg"
+                            viewbox="0 0 130 130" 
+                            fill="currentColor" 
+                            preserveAspectRatio="xMinYMin meet"><path d="M127.987 45.232v60.021c0 6.558-5.527 11.877-12.244 11.693-6.484-.18-11.56-5.582-11.56-11.957V45.232c0-.957.791-1.738 1.769-1.738h4.834c.977 0 1.768.777 1.768 1.738v59.883c0 1.796 1.484 3.492 3.312 3.605 2.054.125 3.763-1.479 3.763-3.467V45.232c0-.957.791-1.738 1.768-1.738h4.834c.978 0 1.769.777 1.769 1.738h-.013ZM21.037 87.355H1.768C.79 87.355 0 88.132 0 89.093v4.788c0 .957.79 1.734 1.769 1.734h5.535v30.647c0 .961.79 1.738 1.769 1.738h4.668c.973 0 1.768-.777 1.768-1.738V95.615h5.536c.973 0 1.769-.777 1.769-1.738v-4.788c0-.96-.791-1.738-1.77-1.738l-.008.004Zm80.893-23.37c0 11.56-9.57 20.96-21.33 20.96h-.28c-11.76 0-21.33-9.404-21.33-20.96 0-11.555 9.57-20.96 21.33-20.96h.28c11.764 0 21.33 9.405 21.33 20.96Zm-8.214 0c0-7.102-5.884-12.888-13.116-12.888h-.29c-7.227 0-13.11 5.782-13.11 12.888 0 7.107 5.88 12.884 13.11 12.884h.29c7.228 0 13.116-5.777 13.116-12.884Zm32.503 55.789h-20.272c-.977 0-1.768.777-1.768 1.738v4.75c0 .961.791 1.738 1.768 1.738h20.272c.977 0 1.768-.777 1.768-1.738v-4.75c0-.961-.791-1.738-1.768-1.738ZM1.769 40.62h9.625c.974 0 1.769-.777 1.769-1.738v-4.75c0-.957-.791-1.738-1.769-1.738H8.367V1.738C8.367.777 7.577 0 6.598 0h-4.83C.792 0 0 .777 0 1.738v37.148c0 .957.79 1.738 1.769 1.738v-.004ZM112.546 8.222h13.673c.977 0 1.768-.777 1.768-1.738V1.738c0-.961-.791-1.738-1.768-1.738h-20.272c-.977 0-1.768.777-1.768 1.738v37.148c0 .957.791 1.738 1.768 1.738h20.272c.977 0 1.768-.777 1.768-1.738v-4.75c0-.957-.791-1.738-1.768-1.738h-13.673V24.43h13.018c.978 0 1.769-.777 1.769-1.738v-4.75c0-.957-.791-1.738-1.769-1.738h-13.018V8.222ZM15.514 38.41 26.959 1.257A1.798 1.798 0 0 1 28.685 0h6.084a1.76 1.76 0 0 1 1.67 1.17L49.51 38.3c.404 1.149-.464 2.348-1.705 2.348H42.74a1.765 1.765 0 0 1-1.67-1.17l-1.765-5.013a1.798 1.798 0 0 0-1.705-1.19H27.167c-.795 0-1.496.509-1.726 1.257l-1.505 4.88a1.766 1.766 0 0 1-1.692 1.232h-5.05c-1.187 0-2.037-1.124-1.693-2.24l.013.005ZM28.37 25.058h7.628l-3.563-10.123c-.158-.451-.812-.438-.953.017L28.37 25.054v.004Zm23.715 13.828V1.77c0-.956.79-1.738 1.769-1.738h32.545c8.06 0 15.004 6.476 15.05 14.393.03 5.46-3.035 10.23-7.567 12.72l7.078 10.791c.757 1.154-.085 2.678-1.483 2.678h-5.748c-.6 0-1.161-.3-1.484-.793l-7.109-10.833H62.221c-.974 0-1.769.777-1.769 1.738v8.159c0 .957-.79 1.738-1.768 1.738H53.85c-.974 0-1.77-.777-1.77-1.738h.005Zm8.367-18.115h26.266c3.818 0 6.866-3.325 6.3-7.181-.454-3.108-3.324-5.33-6.525-5.33h-26.04V20.77ZM0 82.743V45.236c0-.96.79-1.738 1.769-1.738h34.165c11.708 0 21.193 9.53 20.84 21.11-.335 11.146-9.94 19.869-21.287 19.869H1.77C.79 84.477 0 83.7 0 82.739v.004Zm8.201-6.325h27.422c6.85 0 12.691-5.222 12.95-11.952.273-7.073-5.501-12.91-12.64-12.91H8.202v24.862Zm25.696 19.18h65.75c.978 0 1.768-.777 1.768-1.738v-4.75c0-.96-.79-1.738-1.768-1.738H27.303c-.973 0-1.768.777-1.768 1.738v37.148c0 .961.79 1.738 1.768 1.738h72.344c.978 0 1.768-.777 1.768-1.738v-4.75c0-.961-.79-1.738-1.768-1.738H33.9v-7.967h65.117c.977 0 1.768-.777 1.768-1.738v-4.75c0-.961-.79-1.738-1.769-1.738H33.903v-7.992l-.005.013Z" fill="#ff3f52" /></svg>
+                    <div class="sr-only">La Redoute</div>
+                </a>
+            </div>
+
+                <div class="header__universeSwitch header__universeSwitch--mobile">
+                    <ul>
+                        <li><a href="/" class="header__universeSwitch_link body-lg-semiUpper isActive">Casa</a></li>
+                        <li><a href="/fashion.aspx" class="header__universeSwitch_link body-lg-semiUpper ">Moda</a></li>
+                    </ul>
+                </div> 
+            <div class="header__stickyContainer">   
+                    <div class="header__universeSwitch header__universeSwitch--desktop">
+                        <ul>
+                            <li><a href="/" class="header__universeSwitch_link body-lg-semiUpper isActive">Casa</a></li>
+                            <li><a href="/fashion.aspx" class="header__universeSwitch_link body-lg-semiUpper ">Moda</a></li>
+                        </ul>
+                    </div> 
+                
+                <div id="headerSearch" class="header__search">
+                    <form autocomplete="off" action="javascript:void(0);" class="block-search-form" role="search">
+                        <div>
+                            <input title="O que procura?"
+                                    type="search"
+                                    class="header_search_input"
+                                    name="header_search_field"
+                                    autocapitalize="off"
+                                    autocorrect="off"
+                                    autocomplete="off"
+                                    spellcheck="false"
+                                    id="headerSearchField"
+                                    value=""
+                                    data-cerberus="textBox_header_search-engine"
+                                    placeholder="O que procura?"
+                                    maxlength="1500" />
+                            <button type="submit"
+                                    id="headerSearchButton"
+                                    class="header_search_button block-search-validate"
+                                    data-cerberus="button_header_search-engine"
+                                    title="Pesquisar">
+                                <i class="header_icon" aria-hidden="true">
+                                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5 19a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15ZM20.5 20.5 17 17" stroke="#1c1c1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <svg id="searchLoader" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                        <g clip-path="url(#paint0_angular_406_11507_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0.012 2.97823e-05 -2.97823e-05 0.012 16 16)"><foreignObject x="-1086.02" y="-1086.02" width="2172.03" height="2172.03"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(18, 21, 27, 1) 0deg,rgba(7, 20, 38, 0.05) 269.818deg,rgba(7, 20, 38, 0) 315deg,rgba(18, 21, 27, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M9.33301 6.02246C11.6413 4.48013 14.413 3.78561 17.1758 4.05762C19.9387 4.32974 22.5222 5.55154 24.4854 7.51465L21.6572 10.3428C20.3485 9.03403 18.6261 8.2195 16.7842 8.03809C14.9423 7.85667 13.0946 8.32036 11.5557 9.34863C10.0168 10.3769 8.882 11.9066 8.34473 13.6777C7.80746 15.4489 7.90109 17.3516 8.60938 19.0615C9.31766 20.7713 10.5963 22.1832 12.2285 23.0557C13.8607 23.9281 15.7453 24.2077 17.5605 23.8467C19.3758 23.4856 21.0104 22.5059 22.1846 21.0752C23.3586 19.6445 24 17.8508 24 16H28C28 18.7761 27.0374 21.4663 25.2764 23.6123C23.5151 25.7584 21.0637 27.2279 18.3408 27.7695C15.618 28.3111 12.7911 27.8917 10.3428 26.583C7.89451 25.2743 5.97546 23.1566 4.91309 20.5918C3.85084 18.027 3.71076 15.1731 4.5166 12.5166C5.32249 9.85994 7.02471 7.56487 9.33301 6.02246Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.070588238537311554,&#34;g&#34;:0.082352943718433380,&#34;b&#34;:0.10588235408067703,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.027450980618596077,&#34;g&#34;:0.078431375324726105,&#34;b&#34;:0.14901961386203766,&#34;a&#34;:0.050000000745058060},&#34;position&#34;:0.74949485063552856},{&#34;color&#34;:{&#34;r&#34;:0.027450980618596077,&#34;g&#34;:0.078431375324726105,&#34;b&#34;:0.14901961386203766,&#34;a&#34;:0.0},&#34;position&#34;:0.8750}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:23.999994277954102,&#34;m01&#34;:-0.059564594179391861,&#34;m02&#34;:4.0297880172729492,&#34;m10&#34;:0.059564583003520966,&#34;m11&#34;:23.999994277954102,&#34;m12&#34;:3.9702217578887939},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+                                        <defs>
+                                        <clipPath id="paint0_angular_406_11507_clip_path"><path d="M9.33301 6.02246C11.6413 4.48013 14.413 3.78561 17.1758 4.05762C19.9387 4.32974 22.5222 5.55154 24.4854 7.51465L21.6572 10.3428C20.3485 9.03403 18.6261 8.2195 16.7842 8.03809C14.9423 7.85667 13.0946 8.32036 11.5557 9.34863C10.0168 10.3769 8.882 11.9066 8.34473 13.6777C7.80746 15.4489 7.90109 17.3516 8.60938 19.0615C9.31766 20.7713 10.5963 22.1832 12.2285 23.0557C13.8607 23.9281 15.7453 24.2077 17.5605 23.8467C19.3758 23.4856 21.0104 22.5059 22.1846 21.0752C23.3586 19.6445 24 17.8508 24 16H28C28 18.7761 27.0374 21.4663 25.2764 23.6123C23.5151 25.7584 21.0637 27.2279 18.3408 27.7695C15.618 28.3111 12.7911 27.8917 10.3428 26.583C7.89451 25.2743 5.97546 23.1566 4.91309 20.5918C3.85084 18.027 3.71076 15.1731 4.5166 12.5166C5.32249 9.85994 7.02471 7.56487 9.33301 6.02246Z"/></clipPath></defs>
+                                    </svg>
+                                </i>
+                                <span class="sr-only">Pesquisar</span>
+                            </button>
+                            <label id="headerSearchFieldPlaceholder" for="header_search_field" class="search-placeholder roller" style="display: none;"></label>
+                            <button type="button"
+                                    class="block-search-remove close close--dark search-close"
+                                    style="display: none;"
+                                    title="Apagar tudo"
+                                    id="eraseSearchButton">
+                            </button>
                         </div>
+                    </form>
+                    <div class="block-search-suggestion block-search-features-container">
+                        <span class="block-search-wrapper">
+                            <div id="searchHistory" style="display: none;"></div>
+                            <div id="productHistory"
+                                class="widgetCarousel block-search-lastviews"
+                                data-zone="ProductHistory"
+                                data-cerberus="lastviewedproducts"
+                                data-cardtype="thumb"
+                                data-fullwidthscrollbar="true"
+                                style="display: none;"
+                            >
+                                <div class="widget_prdctCarousel_title block-search-suggestion-title title-md-default">
+                                    &#218;ltimos artigos vistos
+                                </div>
+                                <ul class="widgetCarousel-list"></ul>
+                            </div>
+                                <div id="autocompleteList" style="display: none;"></div>
+                        </span>
                     </div>
+                    <button
+                        tabindex="0"
+                        type="button"
+                        class="sr-only close close--dark search-close block-search-sr-close"
+                        title=""
+                        id="closeSearchLayer"></button>
                 </div>
             </div>
-            <div class="container-middle">
-                bfhgjnkhf
+
+            
+                <div id="headerIcons" class="header__icons">
+                    
+                        <button class="lrPLusPanel_trigger header__button lrplus" aria-expanded="false" aria-controls="headerRPlusPanel" aria-describedby="tooltipRPlus" id="headerRPlus">
+                                <i class="header__icon" aria-hidden="true">
+                                    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 29c7.18 0 13-5.82 13-13S23.18 3 16 3 3 8.82 3 16s5.82 13 13 13Z" fill="#0e0ee2" />
+                                        <path d="M26.061 15.199H23.04v-3.023c0-.245-.2-.45-.45-.45h-1.186a.45.45 0 0 0-.45.45V15.2H17.93c-.25 0-.45.2-.45.45v1.186c0 .245.2.45.45.45h3.023v3.023c0 .25.2.45.45.45h1.186c.245 0 .45-.2.45-.45v-3.023h3.022c.246 0 .45-.2.45-.45V15.65c0-.246-.2-.45-.45-.45Z" fill="#FF3EC4"/>
+                                        <path d="M6.94 20.648h1.155c.24 0 .436-.195.436-.436v-2c0-.24.196-.436.437-.436h3.595l1.722 2.672c.082.128.218.2.368.2h1.377a.44.44 0 0 0 .369-.677l-1.714-2.654a3.58 3.58 0 0 0 1.836-3.209c-.045-1.959-1.709-3.495-3.667-3.495H6.94a.436.436 0 0 0-.437.436v9.159c0 .24.196.436.437.436v.004Zm1.596-7.999h4.363c.777 0 1.473.55 1.586 1.318a1.55 1.55 0 0 1-1.531 1.777H8.536V12.65Z" fill="#ffffff" /></svg>
+                                </i>
+                                <span class="sr-only">Espa&#231;o La Redoute +</span>
+                        
+
+
+
+ 
+
+
+
+
+
+<div id="modalLRAndMe" class="lrandme lrandme-discover"
+    style="display: none;" data-isLoyaltyInCart="false">
+
+        <div id="isNotlrandmeContent" style="" class="lrandme_modal text-center">
+            <img class="lrpluslogo" src="https://cdn.laredoute.com/static/Common/lr-plus-logo.svg" alt="Espa&#231;o La Redoute +">  
+
+            <div class="lrandme_modal_zone">
+                <h3 class="lrandme_modal_zone_title">Subscreva e aproveite</h3>
+                <ul class="lrandme_modal_zone_list">
+
+                            <li><span class="lr-tick lr-tick-dark-white"></span>Entregas grátis ilimitadas</li>
+                            <li><span class="lr-tick lr-tick-dark-white"></span>Devoluções grátis</li>
+                </ul>
+
+                <div class="loyalty-description">
+                    <p class="switch loyaltyLrAndMe_zone_switch loyaltyLrAndMe_zone_switchHeader"
+                        role="switch"
+                    >
+                            <label for="checkLrAndMeBoxhHeader" class="switch_label"><span class="bold">Juntar La Redoute + ao carrinho</span> </label>
+                        <input type="checkbox" class="checkLrAndMeBox switch_input" id="checkLrAndMeBoxhHeader" />
+                        <label for="checkLrAndMeBoxhHeader" class="switch_fakeInput">
+                            <i class="switch_fakeInput_icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="switch_fakeInput_icon_tick" d="M20.5938929,11.4545455 L14.0962167,18.4848485 L11.4207029,15.6969697 C10.9110812,15.0909091 9.89183791,15.0909091 9.38221625,15.6969697 C8.87259458,16.1818182 8.87259458,17.030303 9.38221625,17.6363636 L13.0769733,21.5151515 C13.3317842,21.7575758 13.7140004,22 14.0962167,22 C14.4784329,22 14.8606492,21.8787879 15.11546,21.5151515 L22.5049741,13.3939394 C23.1420012,12.7878788 23.1420012,11.9393939 22.6323795,11.4545455 C22.1227579,10.8484848 21.1035145,10.8484848 20.5938929,11.4545455 Z"><path fill="#191919" fill-rule="evenodd" d="M20.5938929,11.4545455 L14.0962167,18.4848485 L11.4207029,15.6969697 C10.9110812,15.0909091 9.89183791,15.0909091 9.38221625,15.6969697 C8.87259458,16.1818182 8.87259458,17.030303 9.38221625,17.6363636 L13.0769733,21.5151515 C13.3317842,21.7575758 13.7140004,22 14.0962167,22 C14.4784329,22 14.8606492,21.8787879 15.11546,21.5151515 L22.5049741,13.3939394 C23.1420012,12.7878788 23.1420012,11.9393939 22.6323795,11.4545455 C22.1227579,10.8484848 21.1035145,10.8484848 20.5938929,11.4545455 Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="switch_fakeInput_icon_cross" d="M22.364 9.63604C22.6288 9.90089 22.6492 10.3176 22.4251 10.6058L22.364 10.6751L16.7142 16.3239L22.0393 21.6496C22.3262 21.9366 22.3262 22.4017 22.0393 22.6887C21.7744 22.9535 21.3577 22.9739 21.0695 22.7498L21.0003 22.6887L15.6754 17.3626L10.6751 22.364C10.3881 22.6509 9.92295 22.6509 9.63604 22.364C9.37119 22.0991 9.35082 21.6824 9.57492 21.3942L9.63604 21.3249L14.6367 16.3239L9.31135 10.9997C9.02443 10.7128 9.02443 10.2476 9.31135 9.96073C9.57619 9.69589 9.99293 9.67551 10.2811 9.89961L10.3504 9.96073L15.6754 15.2851L21.3249 9.63604C21.6119 9.34912 22.077 9.34912 22.364 9.63604Z"><path fill="#191919" fill-rule="evenodd" d="M22.364 9.63604C22.6288 9.90089 22.6492 10.3176 22.4251 10.6058L22.364 10.6751L16.7142 16.3239L22.0393 21.6496C22.3262 21.9366 22.3262 22.4017 22.0393 22.6887C21.7744 22.9535 21.3577 22.9739 21.0695 22.7498L21.0003 22.6887L15.6754 17.3626L10.6751 22.364C10.3881 22.6509 9.92295 22.6509 9.63604 22.364C9.37119 22.0991 9.35082 21.6824 9.57492 21.3942L9.63604 21.3249L14.6367 16.3239L9.31135 10.9997C9.02443 10.7128 9.02443 10.2476 9.31135 9.96073C9.57619 9.69589 9.99293 9.67551 10.2811 9.89961L10.3504 9.96073L15.6754 15.2851L21.3249 9.63604C21.6119 9.34912 22.077 9.34912 22.364 9.63604Z"></path></svg>
+                            </i>
+                        </label>
+                    </p>
+                </div>
+                    
+                
+                <a class="lrandme_modal_zone_link lr-button" href="/la-redoute-plus.aspx">Saber mais</a>
             </div>
         </div>
-    </div>
-</body>
+</div>
 
+
+<script type="application/json" id="switchButtonLRAndMeLabels">
+     {
+        "switchLRAndMeOn": "La Redoute + já está no carrinho",
+        "switchLRAndMeOff": "Juntar La Redoute + ao carrinho",
+        "LoyaltyLRAndMePrice": "",
+        "pdpSwitchLRAndMeOn": "Entrega gratuita",
+        "pdpSwitchLRAndMeOff": "Entrega gratuita",
+        "pdpLoyaltyLRAndMePrice": ""
+     }    
+</script> 
+                        </button>
+                    <div class="header-icon-container">
+                        <button class="header__button | cfao-hide" 
+                            aria-expanded="false" 
+                            aria-controls="headerAccountTooltip"
+                            id="headerAccount"
+                            data-cerberus="img_header_myAccount_mobile"
+                            title="A minha conta">
+                            <i class="header__icon" aria-hidden="true">
+                                    <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-7.5 5a7.5 7.5 0 1 1 15 0 7.5 7.5 0 0 1-15 0ZM20 24.375c-5.466 0-8.782 1.196-10.64 2.239-1.246.7-1.86 2.211-1.86 4.09V32.5h25v-1.795c0-1.88-.614-3.391-1.86-4.091-1.858-1.043-5.174-2.239-10.64-2.239Zm-11.863.059c2.273-1.276 6.02-2.559 11.863-2.559 5.844 0 9.59 1.283 11.863 2.559 2.388 1.34 3.137 3.982 3.137 6.27V32.5a2.5 2.5 0 0 1-2.5 2.5h-25A2.5 2.5 0 0 1 5 32.5v-1.795c0-2.29.749-4.93 3.137-6.271Z" fill="#1c1c1c" /></svg>
+                            </i>
+                            <div class="header__button__textContainer">
+                                    <span id="header__accountText">Entrar / Registar</span>                                 <span class="sr-only">A minha conta</span>
+                                
+                            </div>
+                        </button>
+                    </div>
+
+                    
+                    <div class="header-icon-container">
+                        <a class="header__button header__buttonWishlist cfao-hide"
+                            id="IconWishlist"
+                            href="/myaccount/wishlist.aspx" 
+                            title="Favoritos"
+                            data-cerberus="img_header_wishlist_mobile">
+                                <i class="header__icon">
+                                    <svg aria-hidden="true" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 8.125c-2.925 0-5.625 2.423-5.625 6.875 0 1.452.561 3.104 1.56 4.866.99 1.75 2.36 3.515 3.849 5.169 2.946 3.272 6.256 5.992 7.716 7.139 1.46-1.147 4.77-3.867 7.716-7.14 1.489-1.653 2.858-3.418 3.85-5.168.998-1.762 1.559-3.414 1.559-4.866 0-4.452-2.7-6.875-5.625-6.875-2.089 0-3.517.899-4.538 1.851-.5.468-.892.938-1.23 1.344l-.04.047c-.16.192-.344.413-.516.583-.087.086-.21.2-.362.299A1.494 1.494 0 0 1 20 12.5c-.39 0-.678-.163-.814-.251a2.316 2.316 0 0 1-.362-.299 8.677 8.677 0 0 1-.517-.583l-.038-.047c-.34-.406-.73-.876-1.231-1.344-1.02-.952-2.45-1.851-4.538-1.851ZM4.375 15c0-5.548 3.55-9.375 8.125-9.375 2.911 0 4.92 1.288 6.244 2.524.517.483.937.964 1.256 1.344.32-.38.739-.861 1.256-1.344C22.58 6.913 24.59 5.625 27.5 5.625c4.575 0 8.125 3.827 8.125 9.375 0 2.058-.78 4.15-1.885 6.099-1.111 1.962-2.607 3.877-4.166 5.608-3.118 3.463-6.594 6.308-8.077 7.47a2.414 2.414 0 0 1-2.994 0c-1.483-1.162-4.96-4.007-8.077-7.47-1.559-1.73-3.055-3.646-4.166-5.608-1.105-1.95-1.885-4.04-1.885-6.099Zm15.024-4.809.002-.002-.002.002Zm1.2-.002a.46.46 0 0 1 .002.002l-.002-.002Z" fill="#1c1c1c" /></svg>
+                                    <span class="badge"></span>
+                                    <span class="sr-only badge-label"> favoritos</span>
+                                </i>
+                                <span class="sr-only">Voir ma wishlist</span>
+                        </a>
+                    </div>
+
+                    
+                        <div class="header-icon-container">
+                            <a href="/shoppingbasket/basket.aspx"
+                                class="header__button cfao-hide" 
+                                aria-expanded="false"
+                                aria-controls="basketLayer"
+                                role="button"
+                                id="basketIcon"
+                                title="Carrinho"
+                                data-cerberus="img_header_basket_mobile">
+                                <i class="header__icon">
+                                    <svg aria-hidden="true" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 10H35v21.25A3.75 3.75 0 0 1 31.25 35H8.75A3.75 3.75 0 0 1 5 31.25V10Zm2.5 2.5v18.75c0 .69.56 1.25 1.25 1.25h22.5c.69 0 1.25-.56 1.25-1.25V12.5h-25Z" fill="#1c1c1c" /><path d="M20 3.75c-3.955 0-5.819 3.035-6.655 5.542-.079.237-.15.474-.215.708h2.615c.731-2.14 1.99-3.75 4.255-3.75 2.266 0 3.524 1.61 4.255 3.75h2.615c-.065-.234-.136-.47-.215-.708-.836-2.507-2.7-5.542-6.655-5.542ZM15.09 13.048c.02-.172.042-.356.07-.548h-2.523l-.032.272a18.37 18.37 0 0 0-.103 1.47l-.002.093V14.375a1.25 1.25 0 1 0 2.5 0v-.014l.001-.064c.002-.058.004-.149.01-.265.01-.235.034-.574.079-.984ZM27.486 13.913a18.37 18.37 0 0 0-.123-1.413H24.84a17.101 17.101 0 0 1 .15 1.532c.005.117.008.207.009.265v.064l.001.014v.002a1.25 1.25 0 0 0 2.5-.002v-.04a8.623 8.623 0 0 0-.014-.422Z" fill="#1c1c1c" /></svg>
+                                    <span class="badge"></span>
+                                    <span class="sr-only badge-label"> artigos no carrinho</span>
+                                </i>
+                                <span class="sr-only">Ir para o carrinho</span>
+                            </a>
+                        </div>
+                </div>
+
+                <button class="lr-icon-chevron-md-right menuLinksArrow menuLinksArrow-prev" tabindex="-1" style="display: none"></button>
+                <button class="lr-icon-chevron-md-right menuLinksArrow menuLinksArrow-next" tabindex="-1" style="display: none"></button>
+                <ul id="headerFeatured"class="header__links header__links--small">
+                            <li>
+                                <a class="header__linksItem"
+                                    href="/pplp/100/97172/278261/cat-280747.aspx"
+                                    title="Natal"
+                                    data-cerberus="header_open-featured"
+                                    >
+                                        <span class="header__linksIcon"><i></i></span>
+                                    Natal
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header__linksItem"
+                                    href="/pplp/100/cat-84100.aspx"
+                                    title="Têxtil-lar"
+                                    data-cerberus="header_open-featured"
+                                    >
+                                        <span class="header__linksIcon"><i></i></span>
+                                    Têxtil-lar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header__linksItem"
+                                    href="/pplp/cat-387871.aspx"
+                                    title="Top Vendas"
+                                    data-cerberus="header_open-featured"
+                                    >
+                                        <span class="header__linksIcon"><i></i></span>
+                                    Top Vendas
+                                </a>
+                            </li>
+                                                <li class="featured-right">
+                                <a class="header__linksItem"
+                                    href="/b2b.aspx"
+                                    title="Profissionais"
+                                    data-cerberus="header_open-featured"
+                                    >
+                                        <span class="header__linksIcon"><i></i></span>
+                                    Profissionais
+                                </a>
+                            </li>
+                </ul>
+        </div>
+    </div>
+
+<script type="application/json" id="searchLabels">
+    {
+        "defaultSearchPlaceholder": "O que procura?",
+        "tryTextPlaceholder": "Experimente",
+        "suggestedKeywords": ["Sapatilhas","La redoute interieurs","T-shirt","Vestidos","Cadeira","Calças","Tapete","Capa de edredon","Mesa","Aparador"]
+    }
+</script>
+
+<script type="application/json" id="header_opeco_data">
+    {
+        "isHomePage": "True",
+        "isMobile": "False",
+        "isOpeco": "False",
+        "primaryColour": "",
+        "secondaryColour": "",
+        "tertiaryColour": "",
+        "gradientendColour": "",
+        "maskImageUrl": ""
+    }
+</script>
+
+<script type="application/json" id="headerSwitchText">
+    {
+        "TextToggleOn": "",
+        "TextToggleOff": ""
+    }
+</script>
+
+<script type="application/json" id="menuTranslations">
+{
+    "back": "Voltar",
+    "close": "Fechar"
+}
+</script>
+            </header>
+
+            <div id="buffer"></div>
+            <div class="mask"></div>
+
+            <section id="corePage">
+                <main role="main">
+
+                    
+
+<script type="text/javascript">
+    $(function () {
+        var blocs = {};
+
+        blocs[window.blockName.adserve] = window.constructorName.adserve;
+
+        var params = {};
+
+        window._page = new HP(blocs, params);
+        window._page.isLoaded();
+    });
+</script>
+
+<div class="hp-container" data-cerberus="area_plpProduit_plpBanner1">
+
+
+
+            <div data-widgetId="30507" data-index="0" data-widgetTemplate="ContentHero" data-datemodified="2025-12-04T14:38:13" class="widget-container no-vertical-margins">
+
+
+
+    <div class="contentHero_container " id="contentHeroContainer_30507" data-align="Left">
+        <div class="contentHero_image">
+                <picture>
+                    <source media="(max-width: 480px)" sizes="100vw" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=480,height=600,fit=contain,dpr=1/generic/marketingwarehouse/6/portrait-zsa_xmas_09dez.jpg"/>
+                    <source media="(max-width: 768px)" sizes="100vw" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=765,height=612,fit=contain,dpr=1/generic/marketingwarehouse/6/portrait-zsa_xmas_09dez.jpg"/>
+                    <source media="(max-width: 1200px)" sizes="100vw" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=992,height=660,fit=contain,dpr=1/generic/marketingwarehouse/6/landscape-zsa_xmas_09dez.jpg"/>
+                    <source media="(min-width: 1200px)" sizes="100vw" srcset="https://cdn.laredoute.com/cdn-cgi/image/width=1440,height=548,fit=contain,dpr=1/generic/marketingwarehouse/6/largeLandscape-zsa_xmas_09dez.jpg"/>
+                    <img src="https://cdn.laredoute.com/cdn-cgi/image/width=992,height=660,fit=contain,dpr=1/generic/marketingwarehouse/6/landscape-zsa_xmas_09dez.jpg" class="product_mainImage" alt="Natal" />
+                </picture> 
+        </div>
+            <div class="contentHero_video">
+                <iframe class="contentHero_videoIframe"
+                    style="border: none;"
+                    allow="accelerometer; gyroscope; preload; encrypted-media; picture-in-picture;"
+                    allowfullscreen="true"></iframe>
+            </div>
+
+        
+        <a href="/pplp/100/97172/278261/cat-280747.aspx#opeco=hphome:zsa::ah25_xmas_09-12" class="contentHero_link"><span class="sr-only">Descobrir</span></a>
+        
+        <div class="contentHero_wrapper">
+            <div class="contentHero_titling">
+                <p class="contentHero_title"></p>
+                <ul class="contentHero_buttons">
+                        <li>
+                            <a class="lr-pillButton"  href="/pplp/100/97172/278261/cat-280747.aspx#opeco=hphome:zsa::ah25_xmas_09-12">
+                                <span class="lr-pill-dark">Descobrir</span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+            <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
+                <link rel="prefetch" href="https://customer-aa5qh5a5cu06go6j.cloudflarestream.com/a1ba5e9ac2bf801b2613fa4668fb6f4f/iframe?letterboxColor=white" />
+            <script type="application/json" id="contentHero_data">
+                {
+                    "video_subdomain": "https://customer-aa5qh5a5cu06go6j.cloudflarestream.com",
+                    "video_desktop": "a1ba5e9ac2bf801b2613fa4668fb6f4f",
+                    "video_tablet_landscape": "ee94f92b66bd700002535690887a9bfd",
+                    "video_tablet": "ee94f92b66bd700002535690887a9bfd",
+                    "video_reels": "0eb04299a4ce501e20a4e4e696f5067d",
+                    "desktop_picture": "https://cdn.laredoute.com/cdn-cgi/image/width=1440,height=548,fit=crop,dpr=1/generic/marketingwarehouse/6/landscape-zsa_xmas_09dez.jpg",
+                    "tablet_picture_landscape": "https://cdn.laredoute.com/cdn-cgi/image/width=1440,height=548,fit=crop,dpr=1/generic/marketingwarehouse/6/landscape-zsa_xmas_09dez.jpg",
+                    "tablet_picture": "https://cdn.laredoute.com/cdn-cgi/image/width=768,height=512,fit=crop,dpr=1/generic/marketingwarehouse/6/landscape-zsa_xmas_09dez.jpg",
+                    "reels_picture": "https://cdn.laredoute.com/cdn-cgi/image/width=475,height=468,fit=crop,dpr=1/generic/marketingwarehouse/6/portrait-zsa_xmas_09dez.jpg",
+                    "video_desktop_ratio": "21/9"
+                }
+            </script>
+            <script type="text/javascript">
+                $.fn.widgetContentHero($('#contentHeroContainer_30507'));
+            </script>
+    </div>
+
+            </div>
+                <script type="text/javascript">
+                    document.addEventListener("DOMContentLoaded", () => {
+                        if(typeof productCarouselLoaded !== 'undefined') {
+                            if (productCarouselLoaded == false) {
+                                productCarouselLoaded = true;
+                            }
+                        } else {
+                            let productCarouselLoaded = false;
+                        }
+                    });
+                </script>
+            <div data-widgetId="34430" data-index="1" data-widgetTemplate="NICarouselProducts" data-datemodified="2025-12-04T17:05:14" class="widget-container">
+
+
+
+    <section id="PrdctCarousel_34430" class="widget_prdctCarousel" style="background-color: ;">
+                <div class="widgetCarousel skeleton"
+            id="widgetCarousel_34430"
+            data-itemnumber="6"
+            data-cardtype="product">
+            <ul class="widgetCarousel-list unified-product-card-row" style="justify-content: center;"> 
+                    <li class="widget_prdctCarousel-scrollerContainer widget_prdctCarousel-item-push_card">
+                        <a href="/pplp/100/75363/75443/84169/cat-84171.aspx#opeco=hphome:categorie::ah25_deco_xmas_09-12" class="pl-product-content product-card-v2 unified-product-card">
+                            <span class="widget_prdctCarousel-push_container" style="background-color: #FFE6FF;">
+                                <span class="widget_prdctCarousel-push_heading" style="color: #085833;">
+                                    <p class="widget_prdctCarousel-push_text">Partilhe momentos especiais</p>
+                                </span>
+                                <span class="widget_prdctCarousel-push_main">
+                                        <img class="widget_prdctCarousel-push_img" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/Logo-LR-rosa_clarinho.png" alt="Decora&#231;&#227;o de Natal" />
+                                                                            <span class="lr-pillButton widget_prdctCarousel-push_button">
+                                            <span class="lr-pill">Ver cole&#231;&#227;o </span>
+                                        </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                                    <li class="widget_prdctCarousel-scrollerContainer widgetCarousel-item-placeholder">
+                        <div class="pl-product-content product-card-v2 unified-product-card">
+                            <a class="unified-product-link">
+                                <div class="unified-product-card__top">
+                                    <div class="unified-product-picture">
+                                        <picture>
+                                            <source />
+                                            <img class="pl-image"
+                                                src="https://cdn.laredoute.com/static/Common/placeholder.svg"
+                                                alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="unified-product-card__bottom">
+                                    <div class="unified-product-details">
+                                        <div class="unified-product-details-mainTextContainer">
+                                            <div class="unified-product-title-block">
+                                                <div class="unified-product-brand">
+                                                </div>
+                                                <div class="unified-product-title"></div>
+                                            </div>
+                                            <div class="unified-product-details-priceBlock unified-product-price-block">
+                                                <div class="unified-product-price">
+                                                    <span class="unified-product-price-value"></span>
+                                                </div>
+                                                <div class="unified-product-price--old">
+                                                    <span class="unified-product-price-value"></span>
+                                                    <span class="unified-product-price-decrease"></span>
+                                                </div>
+                                                    <div class="unified-product-price--rplus">
+                                                        <span class="unified-product-price-value"></span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/json" id="widget_productCarouselData_34430">
+    {
+        "goodLink": "false",
+        "link": "/producthelper/getproductsbycategoryv2.aspx?categoryid=84171",
+        "lastSeenProduct": "false;"
+    }
+    </script>
+    <script type="application/json" id="translations">
+    {
+        "EcoPart": "",
+        "SeeAll": "Ver tudo",
+        "StartFrom": "a partir de"
+    }
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            if(typeof productCarouselLoaded !== 'undefined') {
+                if (productCarouselLoaded == false) {
+                    productCarouselLoaded = true;
+                }
+            } else {
+                let productCarouselLoaded = false;
+            }
+        });
+    </script>
+
+            </div>
+            <div data-widgetId="30501" data-index="2" data-widgetTemplate="TriplePush" data-datemodified="2025-12-01T07:24:08" class="widget-container no-vertical-margins">
+
+
+
+
+                <footer id="footer" role="contentinfo">
+
+
+
+
+
+
+    
+
+                <ul class="widgetLine widgetLine__1" >
+                    
+
+
+<li class="footer-column">
+
+
+
+    <div class="reinsurance__wrap" data-widgetId="12639" data-widgettemplate="FooterServiceWithPicto" data-datemodified="2025-03-05T09:19:00">
+        <button class="reinsurance__item " data-url="/services/delivery.aspx" data-isPanel="True" tabindex="0">
+                <img loading="lazy" width="48px" height="48px" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/4287c78912331.svg" alt="Entrega" class="reinsurance__picto"/>
+            <h3 class="reinsurance__label" >Entrega</h3> 
+        </button>
+    </div>
+</li><li class="footer-column">
+
+
+
+    <div class="reinsurance__wrap" data-widgetId="12783" data-widgettemplate="FooterServiceWithPicto" data-datemodified="2023-02-16T14:09:12">
+        <button class="reinsurance__item " data-url="/services/returns.aspx" data-isPanel="True" tabindex="0">
+                <img loading="lazy" width="48px" height="48px" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/4287d01aab2a3.svg" alt="" class="reinsurance__picto"/>
+            <h3 class="reinsurance__label" >TROCAS &amp; DEVOLU&#199;&#213;ES</h3> 
+        </button>
+    </div>
+</li><li class="footer-column">
+
+
+
+    <div class="reinsurance__wrap" data-widgetId="12784" data-widgettemplate="FooterServiceWithPicto" data-datemodified="2025-02-12T15:51:39">
+        <button class="reinsurance__item " data-url="/services/payment.aspx" data-isPanel="True" tabindex="0">
+                <img loading="lazy" width="48px" height="48px" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/card.svg" alt="pagamento" class="reinsurance__picto"/>
+            <h3 class="reinsurance__label" >PAGAMENTO SEGURO</h3> 
+        </button>
+    </div>
+</li><li class="footer-column">
+
+
+
+    <div class="reinsurance__wrap" data-widgetId="12785" data-widgettemplate="FooterServiceWithPicto" data-datemodified="2025-02-12T15:50:39">
+        <button class="reinsurance__item " data-url="/services/contactDetails.aspx" data-isPanel="True" tabindex="0">
+                <img loading="lazy" width="48px" height="48px" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/headphones.svg" alt="apoio" class="reinsurance__picto"/>
+            <h3 class="reinsurance__label" >APOIO AO CLIENTE</h3> 
+        </button>
+    </div>
+</li>            <script type="text/javascript">
+                $(function () {
+                    if ($.fn.widgetFooterServiceWithPicto) {
+                        $.fn.widgetFooterServiceWithPicto($(".reinsurance__wrap"));
+                    }
+                    if ($.fn.widgetFooterBlockOfLogos) {
+                        $.fn.widgetFooterBlockOfLogos($(".logoLinks__items.canScroll:not(.hasScroll)"))
+                    }
+                })
+            </script>
+
+                </ul>
+                    <div class="widgetLine widgetLine__2  ">
+                        
+
+
+<div class="footer-column">
+
+
+
+        <div class="footer-services-block" data-widgetId="12786" data-widgettemplate="FooterBlockOfLinks" data-datemodified="2023-12-05T12:31:25">
+ 
+                <h3 class="footer-services-title"  tabindex="0">LA REDOUTE</h3>
+            
+                <ul class="footer-services-content">
+<li class='footer-services-link  '>
+                            <a href="/services/quemsomos.aspx" ;>Quem somos</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/services/contactDetails.aspx" ;>Contactos</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/alt/responsavel.aspx" ;>Sustentabilidade e responsabilidade social
+</a>
+                    </li>
+                 </ul>
+        </div> 
+</div><div class="footer-column">
+
+
+
+        <div class="footer-services-block" data-widgetId="12787" data-widgettemplate="FooterBlockOfLinks" data-datemodified="2025-07-11T08:28:18">
+ 
+                <h3 class="footer-services-title"  tabindex="0">SERVI&#199;OS</h3>
+            
+                <ul class="footer-services-content">
+<li class='footer-services-link  '>
+                            <a href="/services/faq.aspx" ;>Ajuda</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/services/returns.aspx" ;>Trocas e Devolu&#231;&#245;es</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/myaccount/newsletterunsubscribeoffline.aspx" ;>Remover inscri&#231;&#227;o de Newsletter</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/logisimple-montagem.aspx" ;>Montagem de mobili&#225;rio</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/faq-o-que-e-o-compra-e-poupa.aspx" ;>Compra e Poupa</a>
+                    </li>
+                 </ul>
+        </div> 
+</div><div class="footer-column">
+
+
+
+        <div class="footer-services-block" data-widgetId="12789" data-widgettemplate="FooterBlockOfLinks" data-datemodified="2025-10-13T15:31:18">
+ 
+                <h3 class="footer-services-title"  tabindex="0">MARCAS EXCLUSIVAS</h3>
+            
+                <ul class="footer-services-content">
+<li class='footer-services-link  '>
+                            <a href="/alt/laredoutecollections.aspx" ;>La Redoute Collections</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/hub-lri.aspx" ;>La Redoute Int&#233;rieurs</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/pplp/cat-85201.aspx" ;>AM.PM</a>
+                    </li>
+                 </ul>
+        </div> 
+</div><div class="footer-column">
+
+
+
+        <div class="footer-services-block" data-widgetId="12790" data-widgettemplate="FooterBlockOfLinks" data-datemodified="2024-07-25T09:28:02">
+ 
+                <h3 class="footer-services-title"  tabindex="0">UNIVERSO LA REDOUTE</h3>
+            
+                <ul class="footer-services-content">
+<li class='footer-services-link  '>
+                            <a href="/inspiration/" ;>Inspira&#231;&#227;o</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="https://www.youtube.com/user/RedoutechannelPT" ;>V&#237;deos</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/b2b.aspx" ;>Profissionais</a>
+                    </li>
+<li class='footer-services-link  '>
+                            <a href="/app.aspx" ;>APP La Redoute</a>
+                    </li>
+                 </ul>
+        </div> 
+</div>
+                    </div>
+                    <script type="text/javascript">
+                        $.fn.widgetFooterBlockOfLinks($(".footer-services-content"));
+                    </script> 
+                    <div class="widgetLine widgetLine__3 " >
+                        
+
+
+<div class="footer-column">
+
+    <h3 class="logoLinks__title">MODOS DE PAGAMENTO</h3>
+    <div class="logoLinks__wrap" data-widgetId="12791" data-widgettemplate="FooterBlockOfLogos" data-datemodified="2024-02-07T11:55:31">
+    
+            <button class="prev-icon"></button>
+
+        <ul class="logoLinks__items canScroll" data-name="Footer payments line 3">
+        
+            <li class="logoLinks__item" data-id=0>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/4288b1604a231.svg" alt="visa" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=1>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/4288b25d9ed96.svg" alt="mastercard" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=2>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/4288b3496bc60.svg" alt="paypal" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=3>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42bb001e12534.svg" alt="MB" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=4>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42bb007871d20.svg" alt="MB way" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=5>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/58c6e2c6af917.svg" alt="Apple pay" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=6>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/58d32b47fcc81.svg" alt="Google Pay" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=7>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/5b85fe0adbcb3.svg" alt="Klarna" class="logoLinks__picto" tabindex="0"/>
+            </li>
+            <li class="logoLinks__item" data-id=8>
+                        <img loading="lazy"  src="https://cdn.laredoute.com/generic/marketingwarehouse/6/58567c4d30ca6.svg" alt="amex" class="logoLinks__picto" tabindex="0"/>
+            </li>
+        </ul>
+
+            <button class="next-icon"></button>
+    </div>
+</div><div class="footer-column">
+
+    <h3 class="logoLinks__title">SEMPRE JUNTOS</h3>
+    <div class="logoLinks__wrap" data-widgetId="12883" data-widgettemplate="FooterBlockOfLogos" data-datemodified="2024-11-26T09:14:48">
+    
+            <button class="prev-icon"></button>
+
+        <ul class="logoLinks__items canScroll" data-name="Footer social line 3">
+        
+            <li class="logoLinks__item" data-id=0>
+                    <a href="https://www.facebook.com/LaRedoutePT/" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42ba8d58272c5.svg" alt="Facebook" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=1>
+                    <a href="https://twitter.com/laredoutept" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/5352aa58eae14.svg" alt="X" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=2>
+                    <a href="https://www.instagram.com/laredoute_pt/" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42ba9232132e1.svg" alt="Instagram" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=3>
+                    <a href="https://www.pinterest.pt/laredoutept/" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42ba940091394.svg" alt="Pinterest" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=4>
+                    <a href="https://www.youtube.com/user/RedoutechannelPT" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42ba97477fd62.svg" alt="Youtube" class="logoLinks__picto"/>
+                    </a>
+            </li>
+        </ul>
+
+            <button class="next-icon"></button>
+    </div>
+</div><div class="footer-column">
+
+    <h3 class="logoLinks__title">APP LA REDOUTE</h3>
+    <div class="logoLinks__wrap" data-widgetId="12884" data-widgettemplate="FooterBlockOfLogos" data-datemodified="2022-10-04T03:57:18">
+    
+
+        <ul class="logoLinks__items " data-name="Footer app line 3">
+        
+            <li class="logoLinks__item" data-id=0>
+                    <a href="https://play.google.com/store/apps/details?id=com.ocito.laredoute&amp;gl=US" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42c56496037d0.svg" alt="" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=1>
+                    <a href="https://apps.apple.com/fr/app/la-redoute-mode-maison-ampm/id393136788" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/42bac4ab3a5a8.svg" alt="" class="logoLinks__picto"/>
+                    </a>
+            </li>
+        </ul>
+
+    </div>
+</div><div class="footer-column">
+
+    <h3 class="logoLinks__title">DISTIN&#199;&#213;ES</h3>
+    <div class="logoLinks__wrap" data-widgetId="15212" data-widgettemplate="FooterBlockOfLogos" data-datemodified="2025-02-12T15:13:37">
+    
+
+        <ul class="logoLinks__items " data-name="Footer trust line 3">
+        
+            <li class="logoLinks__item" data-id=0>
+                    <a href="https://portaldaqueixa.com/brands/la-redoute/news/la-redoute-eleita-marca-recomendada-pelo-5o-ano-consecutivo" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/picto-recomendado.png" alt="marca_recomendada" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=1>
+                    <a href="https://www.ctt.pt/grupo-ctt/media/noticias/conheca-os-grandes-vencedores-da-primeira-edicao-dos-ctt-e-commerce-awards" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/43813b50621ae.webp" alt="ctt" class="logoLinks__picto"/>
+                    </a>
+            </li>
+            <li class="logoLinks__item" data-id=2>
+                    <a href="https://selo.confio.pt/sites/profile/dbc96dd0-e224-11e6-bcdb-ad97c1bc4de5" target="_blank" >
+                                                    <img loading="lazy" src="https://cdn.laredoute.com/generic/marketingwarehouse/6/43813bae7df0a.svg" alt="confio" class="logoLinks__picto"/>
+                    </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+                    </div>
+                    <div class="widgetLine widgetLine__4" >
+                        
+
+
+<div class="footer-column">
+
+
+    <ul id="FooterListOfLinks" class="footer__listOfLinks" data-cerberus="area_footer_link" data-widgetId="12908" data-widgettemplate="FooterListOfLinks" data-datemodified="2025-03-03T12:13:20">
+        <li class="footer__listOfLinks__item"><a href="/sellconditions.aspx" class="">Condi&#231;&#245;es gerais de venda</a></li>         
+        <li class="footer__listOfLinks__item"><a href="/services/legal-promo.aspx" class="">*Condi&#231;&#245;es das ofertas em vigor</a></li>         
+        <li class="footer__listOfLinks__item"><a href="/politica-de-privacidade.aspx" class="">Pol&#237;tica de privacidade e cookies</a></li>         
+        <li class="footer__listOfLinks__item"><a href="#" class="footer-cta-show-privacy-center">Gerir cookies</a></li>         
+        <li class="footer__listOfLinks__item"><a href="https://www.livroreclamacoes.pt/" class="">Livro de reclama&#231;&#245;es eletr&#243;nico</a></li>         
+        <li class="footer__listOfLinks__item"><a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=PT" class="">Resolu&#231;&#227;o de Lit&#237;gios Online</a></li>         
+        <li class="footer__listOfLinks__item"><a href="https://laredoute-talent.talentview.io/?locale=en" class="">Recrutamento La Redoute</a></li>         
+    </ul>
+    <div class="footer__countrySelector" data-widgetId="0" data-widgettemplate="FooterListOfLinks">
+        <span class="sr-only" id="countryInfo"></span>
+        <span class="sr-only" id="changeCountry"></span>
+        <span id="openCountryChoice" tabindex="0" role="combobox" aria-labelledby="countryInfo changeCountry" aria-controls="ulCountryLinks" aria-expanded="false">Portugal</span>
+    </div>
+</div>
+                    </div>
+
+    
+<input id="idVirtualSite" type="hidden" value="100" />
+                </footer>
+
+                <div id="overlay"></div>
+        </div>
+
+
+            <button id="backToTop" class="extended-area fade visibility-h" title="Retorne ao topo da p&#225;gina">
+                <div class="back-to-top-arrow"></div>
+            </button>
+    </div>
+
+    
+    <script src="/scripts/labels/?pgs=MobileV3_Home"></script>
+
+    
+    <script id="dataGlobal" type="text/json">
+        {
+            "country": "pt",
+            "countryCode": "pt-PT",
+            "isApp": false,
+            "isMobileDevice": false,
+            "isTabletDevice": false,
+            "isPhoneDevice": false,
+            "name": "MobileV3_Home",
+            "siteId": "6",
+            "pageType": "HomePage",
+            "virtualSite": "Laredoute",
+            "isEnabledSearchHistory":false,
+            "isWoosmapEnabled": true,
+            "woosmapApiKey": "woos-8e618b0d-03f7-3eae-bcfb-07974d1292b5"
+        }
+    </script>
+
+    
+    <script src="/js/6/pt-PT/indexjs?v=9Om33YIbo6WzSy5FD_IPOy9NZmTH6v5auwZ-mEN01T81"></script>
+
+
+    <script id="mainModel" type="text/json">
+        {
+            "site": "Laredoute"
+        }
+    </script>
+
+    <script id="dataDefaultListBlocks" type="text/json">
+        {
+            "productCarousel": "UiProductCarousel"
+            
+
+                    ,"Search": "UiSearch"
+                        ,"header": "UiHeader"
+                            ,"basketLayer": "UiBasketLayer"
+                    ,"CommonMenu": "UiMenu"
+                    ,"AccountLayer": "UiAccountLayer"
+                    ,"SocialLogin" : "SocialProfileReach5"
+                    ,"UiSocialAccountLinking":"UiSocialAccountLinking"
+
+
+        }
+    </script>
+
+    
+    
+
+
+
+
+    
+    <span id="eventContainer" class="hidden"></span>
+
+
+    <script type="text/javascript">
+        // Primary properties
+        var PageTypeEnum = { Unknown: 0, HomePage: 1, ListPage: 2, ProductPage: 3, BasketPage: 4, DeliveryPage: 5, PaymentPage: 6, ConfirmationOrderPage: 7, AddToCartLayer: 8, ErrorPage: 9, LandingPage: 11, SearchPage: 12, QuickZoom: 13, LoginPage: 15, SerpPage: 16, StaticPage: 17, ReviewsPage: 18, OnlineValidationAddress: 19, OnlineValidationAddressDelivery: 20, CreateAccountPageFromBasket: 21, CreateAccountPageFromLogin: 22, EGiftPage: 23, DirectOrderPage: 24, NewsletterSubscriptionSuccess: 25, RequestCataloguePage: 26, RequestCatalogueConfirmationPage: 27, WishList: 28, RequestCataloguePageUnavailable: 29, WishListAddLayer: 30, WishListFriend: 31, WishListSelection: 32, WishListSize: 33, HelpPage: 34, SocialProfileFacebook: 35, MultiProductPage: 36, BrandPage: 37, ContactForm: 38, ContactFormConfirmationPage: 39, FaqPage: 40, FaqDetailsPage: 41, WishListShareEmail: 42, ApplyStyleAccountThankYou: 43, CardAliases: 44, RefundsAllOffline: 45, MakeAPayment: 46, OrderTracingAll: 47, ModifyAccount: 48, MyAccount: 49, OrderTracingAllOffline: 50, RefundsAll: 51, ReturnsAll: 52, MyOffers: 53, MyStatements: 54, RegistrationPage: 55, IndexBrandPage: 56, MultiDimensionProductPage: 57, ApplyStyleAccount: 58, VendorReviewsPage: 59, BasketLogin: 60, BasketThankYou: 61, CompleteLook: 62, BasketOneClick: 63, ListPageBrand: 64, ComparatorProductPage: 65, ListPageComparator: 66, NewsletterUnsubscribeOfflinePage: 67, FinarefRSelect: 68, QuickZoomMobile: 69, CreditAgreement: 70, UpgradeIFC: 71, RemoveLineFromCartAction: 72, EspaceLoyaltyLRAndMe: 73, MyPayment: 74, MyDelivery: 75, AccountFollowUp: 76, MyRedouteLightBox: 77, MyRedouteGallery: 78, ListPageComparatorBrand: 79, NewsletterSubscribeOfflinePage: 80, BlogPostList: 81, BlogPostDetail: 82, SetUpDirectDebit: 83, GLFRegistration: 84, GDPR: 85, LaRedouteVoyage: 86, SocialProfile: 87, FinarefRPremium: 88, FinarefRExpress: 89, RPayment: 90, FlashSalesList: 91, Inspiration: 92, AfterSalesServiceRequest: 93, AfterSalesServiceSuccess: 94, InspirationCategory: 95, InspirationCategorySimple: 96, InspirationCategoryEmpty: 97, CreditLimit: 98, WebAdvisorLogin: 99, WebAdvisorRegister: 100, WebAdvisorCustomers: 101, InspirationArticle: 102, PaymentLoyaltyLRAndMe: 103, StaticLandingPage: 104, CheckoutApplyStyleAccount: 105, ForgotPasswordReset: 106, ForgotPasswordLinkNotValid: 107, Returns: 108, SocialGallery: 109, AlternativePage: 110, StoreDetails: 111, Stores: 112, StoresList: 113, StoreRegion: 114, StoreCity: 115, AllStores: 116, RegistrationThankYouPage: 117, InspirationAuthor: 118, RemoveFromWishlist: 119, AddToWishlist: 120, SponsoredBanner: 121, AccountCredentials: 122, AccountFamily: 123, SponsoredBreakZone: 124, SponsoredCarousel: 125 };
+        var isMobileDevice = false;
+        var isPhoneDevice = false;
+        var pageType = 'HomePage';
+        var virtualSite = 'Laredoute';
+        var $eventContainer = $('#eventContainer');
+        var displayPriceAsMember = false;
+
+        $(function ()
+        {
+            // default page declaration in the case there is no specific page init
+            if (typeof window._page === 'undefined')
+            {
+                window._page = new Page(window.pageBlocs, window.pageParams);
+                window._page.isLoaded();
+            }
+        });
+    </script>
+
+        <script id="tc_vars" type="text/javascript">var tc_vars = new Array();tc_vars["env_template"] = "HP"; tc_vars["env_work"] = "PRD"; tc_vars["env_channel"] = "MOBILE"; tc_vars["env_is_xhr_request"] = "N"; tc_vars["env_language"] = "PT"; tc_vars["env_country"] = "PT"; tc_vars["page_breadcrumb_id"] = ""; tc_vars["page_breadcrumb_label"] = ""; tc_vars["user_id"] = ""; tc_vars["virtual_site"] = "laredoute"; tc_vars["pageName"] = "LaRedoute"; tc_vars["pageType"] = "HomePage"; tc_vars["country"] = "PT"; tc_vars["language"] = ""; tc_vars["siteVersion"] = "Mainsite"; tc_vars["isLoggedIn"] = "False"; tc_vars["email_sha256"] = ""; tc_vars["appOwner"] = "false"; tc_vars["appOwner_noOrder"] = "false"; tc_vars["appActive"] = ""; tc_vars["appHighPotential"] = "false"; tc_vars["event_id"] = "bc3c69a7-63ed-4cc4-ad04-3528433dbe4d"; tc_vars["isBot"] = "false"; </script>
+
+
+
+
+        <script>
+            (function () {
+                var webSdkScript = document.createElement("script");
+
+                // fetch the latest version of the Web-SDK from the CDN
+                webSdkScript.src =
+                    "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
+
+                webSdkScript.onload = () => {
+                    window.GrafanaFaroWebSdk.initializeFaro({
+                        url: "https://faro-collector-prod-eu-west-3.grafana.net/collect/fc37708f54e61e6c5ebc589cbc73dd89",
+                        app: {
+                            name: "La Redoute Web",
+                            version: "1.0.0",
+                            environment: "PRODUCTION",
+                        },
+                        sessionTracking: {
+                            enabled:  true,
+                            persistent:  true,
+                            maxSessionPersistenceTime:  14400000,
+                            samplingRate:  0.05,
+                            session: {
+                                attributes: {
+                                    country: "pt",
+                                    platform: "theseus",
+                                },
+                            },
+                        },
+			            pageTracking: {
+				            // For advanced use cases, double check if setPage('new-page-id') fits your use case better
+				            generatePageId(location) {
+					            if (location.pathname.startsWith("/pplp/"))
+						            return "/pplp/*";
+					            else if (location.pathname.startsWith("/ppdp/"))
+						            return "/ppdp/*";
+					            else if (location.pathname.startsWith("/psrch/"))
+						            return "/psrch/*";
+				            },
+			            },
+                    });
+
+                    // Load instrumentations at the onLoad event of the web-SDK and after the above configuration.
+                    // This is important because we need to ensure that the Web-SDK has been loaded and initialized before we add further instruments!
+                    var webTracingScript = document.createElement("script");
+
+                    // fetch the latest version of the Web Tracing package from the CDN
+                    webTracingScript.src =
+                        "https://unpkg.com/@grafana/faro-web-tracing@^1.4.0/dist/bundle/faro-web-tracing.iife.js";
+
+                    // Initialize, configure (if necessary) and add the the new instrumentation to the already loaded and configured Web-SDK.
+                    webTracingScript.onload = () => {
+                        window.GrafanaFaroWebSdk.faro.instrumentations.add(
+                            new window.GrafanaFaroWebTracing.TracingInstrumentation());
+                    };
+
+                    // Append the Web Tracing script script tag to the HTML page
+                    document.head.appendChild(webTracingScript);
+                };
+
+                // Append the Web-SDK script script tag to the HTML page
+                document.head.appendChild(webSdkScript);
+            })();
+        </script>
+
+
+    <div class="theseusTag-divMain">
+        <span id="crb-serverName">11</span>
+        <span id="crb-TheseusVersion">46006.47968375</span>
+        <span id="crb-elapsedTime">16</span>
+        <span id="crb-environment">PRODUCTION</span>
+        <span id="crb-ssid"></span>
+        <span id="crb-sskey"></span>
+        <span id="crb-ssmega"></span>
+        <span id="crb-sstype"></span>
+    </div>
+    
+
+    
+    <div id="productModel" class="hidden">
+        <div class="product">
+            <a class="product-link">
+                <div class="product-img-container">
+                        <div class="product-sticker-bottom-left" style="display: none;"></div>
+                        <div class="product-sticker-top-left" style="display: none;"></div>
+                    <picture class="product-img" data-cerberus="detail_product_image"></picture>
+                </div>
+                <div class="product-info">
+                        <div class="product-tag product-sticker-outer-bottom text-ellipsis" style="display: none"></div>
+                    <div class="rating-stars-container" style="display: none;">
+                        <span class="disable-stars">
+                            <span class="stars lr-icon lr-icon-star-grey"></span><span class="stars lr-icon lr-icon-star-grey"></span><span class="stars lr-icon lr-icon-star-grey"></span><span class="stars lr-icon lr-icon-star-grey"></span><span class="stars lr-icon lr-icon-star-grey"></span>
+                        </span>
+                        <span class="enable-stars">
+                            <span class="stars lr-icon lr-icon-star-yellow"></span><span class="stars lr-icon lr-icon-star-yellow"></span><span class="stars lr-icon lr-icon-star-yellow"></span><span class="stars lr-icon lr-icon-star-yellow"></span><span class="stars lr-icon lr-icon-star-yellow"></span>
+                        </span>
+                        <span class="review-number"></span>
+                    </div>
+                    <div class="product-brand text-ellipsis" data-cerberus="detail_product_brand">_____</div>
+                    <div class="product-title text-ellipsis" data-cerberus="detail_product_name"></div>
+                    <div>
+                        <del class="product-original-price" data-cerberus="detail_product_oldPrice" style="display: none;"></del>
+                        <span class="product-discount" data-cerberus="detail_product_discountReview" style="display: none;"></span>
+                    </div>
+                    <div class="product-price-container">
+                        <span class="product-price-from" style="display: none;">a partir de</span>
+                        <span class="product-price" data-cerberus="detail_product_finalPrice"></span>
+                    </div>
+                    <div class="product-memberprice-container">
+                        <span class="product-price-from pl-from" style="display: none;">a partir de</span>
+                        <span class="product-memberprice" data-cerberus="detail_product_memberPrice" style="display: none;"></span>
+                        <span class="member-price__tag lr-icon lr-icon-lrplus-color-small" style="display: none;"></span>
+                    </div>
+                        <div class="product-tag product-sticker-lr-plus text-ellipsis" style="display: none"></div>
+                    <div class="product-eco-part" style="display: none;"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    
+
+    
+</body>
 </html>
