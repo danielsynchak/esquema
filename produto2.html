@@ -1278,7 +1278,40 @@
             <div class="col-xl-6 col-md-6 lateral-product-images d-none d-md-block">
                 <div class="row">
                     <div class="col-12 px-5">
-                        <img src="images/Exemplo1.png" alt="Produto Exemplo" style="width:100%; height:100%; object-fit:contain; cursor:pointer;">
+                        <div>
+        <canvas id="meuCanvas"></canvas>
+    </div>
+
+    <div>
+        <p>
+            <button id="btn_tampa">Levantar Tampa</button>
+            <button id="btn_agulha">Agulha</button>
+            <button id="btn_disco">Disco</button>
+            <button id="btn_pause">Pause</button>
+            <button id="btn_stop">Stop</button>
+            <button id="btn_reverse">Reverse</button>
+            <label>Loop:
+                <select id="menu_loop">
+                    <option value="1">Uma Vez</option>
+                    <option value="2" selected>Repetir</option>
+                    <option value="3">Ping Pong</option>
+                </select>
+            </label>
+        </p>
+
+    </div>
+
+  <!-- Scripts -->
+  <script async src="/node_modules/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+    "imports": {
+      "three": "/node_modules/three/build/three.module.js",
+      "three/addons/": "/node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" defer src="./main.js"></script>
                     </div>
                     
                 </div>
