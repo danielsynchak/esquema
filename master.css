@@ -16357,6 +16357,7 @@ body.laredouteforbusiness .header:not(.isFixed), body.lesaubaines .header:not(.i
   -o-transition: all 0.2s;
   transition: all 0.2s;
   border-radius: 4px;
+  color:#000000;
 }
 @media (max-width: 361px) {
   .header__universeSwitch_link {

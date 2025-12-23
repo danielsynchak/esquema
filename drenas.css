@@ -230,6 +230,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 600;
   line-height: 1.2;
+  
   color: var(--bs-heading-color, inherit);
 }
 
@@ -14801,7 +14802,7 @@ h6 a,
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'roboto';
   font-weight: 600;
-  color: var(--title);
+  color: white;
   line-height: 1.4;
 }
 
@@ -44854,14 +44855,14 @@ table.wishlist_table {
 .month-deal .sale-countdown .date .work-time {
   font-size: 12px;
   letter-spacing: 0;
-  color: var(--title);
+  color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
   font-family: var(--font-family-title);
 }
 
 a {
-  color: var(--title);
+  color: #ffffff;;
 }
 
 .navbar-toggler {

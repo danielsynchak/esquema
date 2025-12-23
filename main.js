@@ -10,7 +10,8 @@ let acaoRodar = null;
 let acaoDisco = null;
 
 
-let materialBlackMatte; // vai guardar o material chamado "BlackMattePlastic"
+let materialBlackMatte;
+let materialOther; // vai guardar o material chamado "BlackMattePlastic"
        // exemplo de outro material
 
 
@@ -64,7 +65,7 @@ carregador.load('RecordPlayer.gltf', function(gltf) {
                 materialBlackMatte = child.material;
             }
 
-            if (child.material.name === "OutroMaterial") {
+            if (child.material.name === "BlackGlossyPlasticBaked") {
                 materialOther = child.material;
             }
 
@@ -86,9 +87,14 @@ carregador.load('RecordPlayer.gltf', function(gltf) {
 });
 
 
-document.getElementById('btn_mudar_base').onclick = function() {
+document.getElementById('btn_vermelho').onclick = function() {
     if (baseMesh && materialBlackMatte) {
         baseMesh.material = materialBlackMatte;
+    }
+};
+document.getElementById('btn_azul').onclick = function() {
+    if (baseMesh && materialOther) {
+        baseMesh.material = materialOther;
     }
 };
 
@@ -139,10 +145,12 @@ document.getElementById('menu_loop').onchange = function() {
         case '2':
             acaoMover.setLoop(THREE.LoopRepeat);
             acaoRodar.setLoop(THREE.LoopRepeat);
+            acaoDisco.setLoop(THREE.LoopRepeat);
             break;
         case '3':
             acaoMover.setLoop(THREE.LoopPingPong);
             acaoRodar.setLoop(THREE.LoopPingPong);
+            acaoDisco.setLoop(THREE.LoopPingPong);
             break;
     }
 };
