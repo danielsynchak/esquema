@@ -10,8 +10,9 @@ let acaoRodar = null;
 let acaoDisco = null;
 
 
-const materialOriginal = new THREE.MeshStandardMaterial({ color: 0xaaaaaa });
-const materialNovo = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+let materialBlackMatte; // vai guardar o material chamado "BlackMattePlastic"
+       // exemplo de outro material
+
 
 
 // ---------- Câmera ----------
@@ -52,19 +53,29 @@ let baseMesh;
 let carregador = new GLTFLoader();
 
 
-carregador.load('RecordPlayerTeste3gltf.gltf', function(gltf) {
+carregador.load('RecordPlayer.gltf', function(gltf) {
     cena.add(gltf.scene);
 
     // encontrar a mesh pelo nome
     gltf.scene.traverse((child) => {
-        if (child.isMesh && child.name === "Base") {
-            baseMesh = child;
-            // opcional: setar o material original inicialmente
-            baseMesh.material = materialOriginal;
+        if (child.isMesh) {
+            // verificar o nome do material
+            if (child.material.name === "Glass") {
+                materialBlackMatte = child.material;
+            }
+
+            if (child.material.name === "OutroMaterial") {
+                materialOther = child.material;
+            }
+
+            // se for a mesh que você quer manipular
+            if (child.name === "Base") {
+                baseMesh = child; // salvar a mesh Base
+            }
         }
     });
 
-    let clip1 = THREE.AnimationClip.findByName(gltf.animations, '[Action Stash]');
+    let clip1 = THREE.AnimationClip.findByName(gltf.animations, 'Abrir');
     acaoMover = misturador.clipAction(clip1);
 
     let clip2 = THREE.AnimationClip.findByName(gltf.animations, 'LevantarAgulha');
@@ -76,10 +87,12 @@ carregador.load('RecordPlayerTeste3gltf.gltf', function(gltf) {
 
 
 document.getElementById('btn_mudar_base').onclick = function() {
-    if (baseMesh) {
-        baseMesh.material = materialNovo; // troca para o novo material
+    if (baseMesh && materialBlackMatte) {
+        baseMesh.material = materialBlackMatte;
     }
 };
+
+
 
 
 // ---------- Botões de controle ----------
