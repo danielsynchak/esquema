@@ -14277,7 +14277,7 @@ html:lang(ru-RU) .footer-newsletter-form label {
   }
 }
 #footer .widgetLine__1 {
-  background-color: #00454c;
+  background-color: #2B1F17;
 }
 @media (min-width: 768px) {
   #footer .widgetLine__1 {
@@ -14449,6 +14449,10 @@ html:lang(ru-RU) #footer .widgetLine__1 .reinsurance__label {
     width: 240px;
   }
 }
+#footer .widgetLine.widgetLine__2 {
+    background-color: #5C3A21;
+}
+
 #footer .widgetLine__2 .footer-services-block {
   border: none;
   padding: 30px 0;
@@ -14507,7 +14511,7 @@ html:lang(ru-RU) #footer .widgetLine__2 .footer-services-title {
           box-shadow: none !important;
 }
 #footer .widgetLine__2 .footer-services-btn:focus-visible {
-  outline: 3px solid #2D74B9 !important;
+  outline: 3px solid #5C3A21 !important;
   color: #FFF;
   border-radius: 4px !important;
 }
@@ -14575,7 +14579,7 @@ html:lang(ru-RU) #footer .widgetLine__2 .footer-services-link {
   }
 }
 #footer .widgetLine__3 {
-  background-color: #00565f;
+  background-color: #2B1F17;
   font-family: "Barlow Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
 }
 html:lang(ru-RU) #footer .widgetLine__3 {
@@ -14599,7 +14603,7 @@ html:lang(ru-RU) #footer .widgetLine__3 {
   content: "";
   height: 0.5px;
   width: 100%;
-  background-color: #FFF;
+  
   margin: 18px 0;
   position: absolute;
 }
@@ -14924,6 +14928,9 @@ html:lang(ru-RU) #footer .widgetLine__3 {
     padding: 30px 48px 30px 48px;
   }
 }
+#footer .widgetLine.widgetLine__4 {
+    background-color: #5C3A21;
+}
 #footer .widgetLine__4 .footer-column {
   padding: 0;
   color: #FFF;
@@ -14942,7 +14949,7 @@ html:lang(ru-RU) #footer .widgetLine__3 {
     content: "";
     height: 0.5px;
     width: 100%;
-    background-color: #FFF;
+    
     margin: 0;
     position: absolute;
     top: 0;
