@@ -9,6 +9,11 @@ let acaoMover = null;
 let acaoRodar = null;
 let acaoDisco = null;
 
+
+const materialOriginal = new THREE.MeshStandardMaterial({ color: 0xaaaaaa });
+const materialNovo = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+
+
 // ---------- Câmera ----------
 let camara = new THREE.PerspectiveCamera(70, 800 / 600, 0.1, 1000);
 camara.position.set(0.5, 0.5, 0.5); // posição inicial mais próxima do objeto
@@ -43,9 +48,21 @@ loaderTextura.load('images/cena.png', function(texture) {
 });
 
 // ---------- Carregamento do GLTF ----------
+let baseMesh;
 let carregador = new GLTFLoader();
+
+
 carregador.load('RecordPlayerTeste3gltf.gltf', function(gltf) {
     cena.add(gltf.scene);
+
+    // encontrar a mesh pelo nome
+    gltf.scene.traverse((child) => {
+        if (child.isMesh && child.name === "Base") {
+            baseMesh = child;
+            // opcional: setar o material original inicialmente
+            baseMesh.material = materialOriginal;
+        }
+    });
 
     let clip1 = THREE.AnimationClip.findByName(gltf.animations, '[Action Stash]');
     acaoMover = misturador.clipAction(clip1);
@@ -53,9 +70,17 @@ carregador.load('RecordPlayerTeste3gltf.gltf', function(gltf) {
     let clip2 = THREE.AnimationClip.findByName(gltf.animations, 'LevantarAgulha');
     acaoRodar = misturador.clipAction(clip2);
 
-    let clip3 = THREE.AnimationClip.findByName(gltf.animations, 'Disco');
+    let clip3 = THREE.AnimationClip.findByName(gltf.animations, 'VinylDiskAction');
     acaoDisco = misturador.clipAction(clip3);
 });
+
+
+document.getElementById('btn_mudar_base').onclick = function() {
+    if (baseMesh) {
+        baseMesh.material = materialNovo; // troca para o novo material
+    }
+};
+
 
 // ---------- Botões de controle ----------
 document.getElementById('btn_tampa').onclick = function() {
