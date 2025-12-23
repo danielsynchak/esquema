@@ -7,7 +7,7 @@ let cena=new THREE.Scene()
 let misturador=new THREE.AnimationMixer(cena)
 let acaoMover=null
 let acaoRodar=null
-
+let acaoDisco=null
 
 
 let camara=new THREE.PerspectiveCamera(70,800/600,0.1,1000)
@@ -38,15 +38,24 @@ carregador.load(
         let clip2=THREE.AnimationClip.findByName(gltf.animations,'LevantarAgulha')
         acaoRodar=misturador.clipAction(clip2)
         
-    
+        let clip3=THREE.AnimationClip.findByName(gltf.animations,'Disco')
+        acaoDisco=misturador.clipAction(clip3)
+        
     }
 )
 document.getElementById('btn_tampa').onclick=function(){
+    acaoMover.reset()
     acaoMover.play()
     
 }
-document.getElementById('btn_agulha').onclick=function(){
+
+document.getElementById('btn_disco').onclick=function(){
+    acaoDisco.reset()
+    acaoDisco.play()
     
+}
+document.getElementById('btn_agulha').onclick=function(){
+    acaoRodar.reset()
     acaoRodar.play()
 }
 document.getElementById('btn_stop').onclick=function(){
@@ -69,6 +78,9 @@ document.getElementById('menu_loop').onchange=function(){
 
             acaoRodar.clampWhenFinished=true
             acaoRodar.setLoop(THREE.LoopOnce)
+
+            acaoDisco.clampWhenFinished=true
+            acaoDisco.setLoop(THREE.LoopOnce)
             break
         case '2':
             acaoMover.setLoop(THREE.LoopRepeat)
