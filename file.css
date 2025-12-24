@@ -1,3 +1,14 @@
 .widgetLine__1 {
     background-color: #2B1F17;
 }
+
+
+.contentHero_buttons {
+    display: flex !important;
+    justify-content: center !important;    
+    text-align: center !important;
+}
+
+
+
+
