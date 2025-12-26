@@ -2779,7 +2779,7 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
     padding-right: 8px
 }
 
-
+/*
 @media (min-width: 768px) {
     .contentHero_image {
         height: 300px;
@@ -2788,16 +2788,37 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
 
 @media (min-width: 1200px) {
     .contentHero_image {
-        height: 360px; /* desktop mais baixo */
+        height: 360px; 
     }
+}*/
+
+
+.contentHero_image1 {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 4 / 1;
+    overflow: hidden;
 }
 
-
-.contentHero_image picture img {
-    width: 100vw;
+.contentHero_image1 picture,
+.contentHero_image1 picture img {
+    width: 100%;
     height: 100%;
+}
+
+.contentHero_image1 picture img {
     object-fit: cover;
 }
+
+/* Camada preta transparente */
+.contentHero_image1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* ajusta a opacidade */
+    pointer-events: none;
+}
+
 
 .contentHero_video {
     position: absolute;
@@ -2860,20 +2881,20 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
 .contentHero_title {
     font-weight: 600;
     font-family: "Poppins";
-    font-size: 26px;
+    font-size: 70px;
     line-height: 36px
 }
 
 @media(min-width:992px) {
     .contentHero_title {
-        font-size: 38px;
+        font-size: 60px;
         line-height: 52px
     }
 }
 
 @media(min-width:1200px) {
     .contentHero_title {
-        font-size: 40px;
+        font-size: 70px;
         line-height: 56px
     }
 }
@@ -2895,11 +2916,16 @@ html:lang(ru-RU) .contentHero_title {
     }
 }
 
-.contentHero_title {
-    color: #fff;
-    margin-bottom: 16px
-}
 
+.contentHero_title{
+    position: absolute;
+    bottom: 0%;
+    transform: translate(-35%,-200%);
+    color: #fff;
+    margin-bottom: 16px;
+    width: 500px;
+    text-align: center;
+}
 @media(min-width:992px) {
     .contentHero_title {
         margin-bottom: 24px
@@ -2915,7 +2941,7 @@ html:lang(ru-RU) .contentHero_title {
 
 @media(min-width:992px) {
     .contentHero_subtitle {
-        font-size: 18px;
+        font-size: 24px;
         line-height: 24px
     }
 }
