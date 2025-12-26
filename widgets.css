@@ -2778,11 +2778,7 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
     padding-left: 8px;
     padding-right: 8px
 }
-.contentHero_image {
-    position: relative;
-    width: 100vw;
-    height: 220px; /* mobile */
-}
+
 
 @media (min-width: 768px) {
     .contentHero_image {
