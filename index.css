@@ -164,6 +164,20 @@
     margin-bottom: 15px;
     text-align: center
 }
+.menu__listFooter .menuSelectionList a {
+    background: none !important;       /* remove qualquer background */
+    border-bottom: none !important;    /* remove borda inferior azul */
+    box-shadow: none !important;       /* remove possíveis sombras */
+    color: inherit !important;         /* mantém a cor do texto */
+    outline: none !important;           /* remove contorno de foco */
+}
+
+.menu__listFooter .menuSelectionList a:hover,
+.menu__listFooter .menuSelectionList a:focus {
+    background: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
 
 .disrupt-block-1,
 .disrupt-block-2 {
@@ -3543,4 +3557,15 @@ html:lang(ru-RU) .hp-container .carousel-expandable_title {
     font-weight: 600;
     background: transparent;
     cursor: pointer;
+}
+#menuUniverseSelection {
+    display: flex;           /* transforma em flex container */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente se houver altura definida */
+}
+
+#menuUniverseSelection .segmentedPart {
+    display: flex;
+    align-items: center;     /* centraliza o ícone e o texto verticalmente */
+    gap: 8px;                /* espaçamento entre ícone e texto */
 }
