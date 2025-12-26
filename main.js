@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "three"
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
@@ -9,10 +9,12 @@ let acaoMover = null;
 let acaoRodar = null;
 let acaoDisco = null;
 
-
+/*
 let materialBlackMatte;
 let materialOther; // vai guardar o material chamado "BlackMattePlastic"
-       // exemplo de outro material
+       // exemplo de outro material*/
+let materiais = {};   // vai guardar todos os materiais
+   
 
 
 
@@ -39,7 +41,7 @@ cena.add(luzes);
 // ---------- Fundo 360° (esfera invertida) ----------
 let skySphere;
 const loaderTextura = new THREE.TextureLoader();
-loaderTextura.load('images/cena.png', function(texture) {
+loaderTextura.load('images/cena.png', function (texture) {
     const geometria = new THREE.SphereGeometry(50, 60, 40);
     const material = new THREE.MeshBasicMaterial({
         map: texture,
@@ -54,27 +56,39 @@ let baseMesh;
 let carregador = new GLTFLoader();
 
 
-carregador.load('RecordPlayer.gltf', function(gltf) {
+carregador.load('blender/RecordPlayerTeste1.gltf', function (gltf) {
     cena.add(gltf.scene);
 
     // encontrar a mesh pelo nome
     gltf.scene.traverse((child) => {
         if (child.isMesh) {
-            // verificar o nome do material
-            if (child.material.name === "Glass") {
-                materialBlackMatte = child.material;
+            // 1️⃣ Guardar o material pelo nome
+            if (child.material && child.material.name) {
+                materiais[child.material.name] = child.material;
             }
 
-            if (child.material.name === "BlackGlossyPlasticBaked") {
-                materialOther = child.material;
-            }
-
-            // se for a mesh que você quer manipular
+            // 2️⃣ Guardar a mesh "Base"
             if (child.name === "Base") {
-                baseMesh = child; // salvar a mesh Base
+                baseMesh = child;
             }
+            /*
+                        // verificar o nome do material
+                        if (child.material.name === "BlackMattePlastic") {
+                            materialBlackMatte = child.material;
+                        }
+            
+                        if (child.material.name === "BlackGlossyPlasticBaked") {
+                            materialOther = child.material;
+                        }
+            
+                        // se for a mesh que você quer manipular
+                        if (child.name === "Base") {
+                            baseMesh = child; // salvar a mesh Base
+                        }*/
         }
     });
+    console.log(materiais);
+    console.log(baseMesh);
 
     let clip1 = THREE.AnimationClip.findByName(gltf.animations, 'Abrir');
     acaoMover = misturador.clipAction(clip1);
@@ -86,53 +100,69 @@ carregador.load('RecordPlayer.gltf', function(gltf) {
     acaoDisco = misturador.clipAction(clip3);
 });
 
+/*
+document.getElementById('btn_BlackMattePlastic').onclick = function () {
+    if (baseMesh && materiais[nomeMaterial]) {
+            baseMesh.material = materiais[nomeMaterial];
+            baseMesh.material.needsUpdate = true;
+        }
+};
+document.getElementById('btn_BlackGlossyPlasticBaked').onclick = function () {
+    if (baseMesh && materiais[nomeMaterial]) {
+            baseMesh.material = materiais[nomeMaterial];
+            baseMesh.material.needsUpdate = true;
+        }
+};*/
 
-document.getElementById('btn_vermelho').onclick = function() {
-    if (baseMesh && materialBlackMatte) {
-        baseMesh.material = materialBlackMatte;
-    }
-};
-document.getElementById('btn_azul').onclick = function() {
-    if (baseMesh && materialOther) {
-        baseMesh.material = materialOther;
-    }
-};
+document.querySelectorAll('[id^="btn_"]').forEach((botao) => {
+    botao.addEventListener('click', () => {
+
+        // tira "btn_" do id
+        const nomeMaterial = botao.id.replace('btn_', '');
+
+        // verifica se existe
+        if (baseMesh && materiais[nomeMaterial]) {
+            baseMesh.material = materiais[nomeMaterial];
+            baseMesh.material.needsUpdate = true;
+        }
+    });
+});
 
 
 
 
 // ---------- Botões de controle ----------
-document.getElementById('btn_tampa').onclick = function() {
+document.getElementById('btn_tampa').onclick = function () {
     acaoMover.reset();
     acaoMover.play();
 };
 
-document.getElementById('btn_disco').onclick = function() {
+document.getElementById('btn_disco').onclick = function () {
     acaoDisco.reset();
     acaoDisco.play();
 };
 
-document.getElementById('btn_agulha').onclick = function() {
+document.getElementById('btn_agulha').onclick = function () {
     acaoRodar.reset();
     acaoRodar.play();
 };
 
-document.getElementById('btn_stop').onclick = function() {
+document.getElementById('btn_stop').onclick = function () {
     acaoMover.stop();
     acaoRodar.stop();
 };
 
-document.getElementById('btn_pause').onclick = function() {
+document.getElementById('btn_pause').onclick = function () {
     acaoMover.paused = !acaoMover.paused;
     acaoRodar.paused = !acaoRodar.paused;
 };
 
-document.getElementById('btn_reverse').onclick = function() {
+document.getElementById('btn_reverse').onclick = function () {
     acaoMover.timeScale = -acaoMover.timeScale;
     acaoRodar.timeScale = -acaoRodar.timeScale;
 };
 
-document.getElementById('menu_loop').onchange = function() {
+document.getElementById('menu_loop').onchange = function () {
     switch (this.value) {
         case '1':
             acaoMover.clampWhenFinished = true;
