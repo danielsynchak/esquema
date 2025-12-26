@@ -150,16 +150,19 @@ document.getElementById('btn_agulha').onclick = function () {
 document.getElementById('btn_stop').onclick = function () {
     acaoMover.stop();
     acaoRodar.stop();
+    acaoDisco.stop();
 };
 
 document.getElementById('btn_pause').onclick = function () {
     acaoMover.paused = !acaoMover.paused;
     acaoRodar.paused = !acaoRodar.paused;
+    acaoDisco.paused = !acaoDisco.paused;
 };
 
 document.getElementById('btn_reverse').onclick = function () {
     acaoMover.timeScale = -acaoMover.timeScale;
     acaoRodar.timeScale = -acaoRodar.timeScale;
+    acaoDisco.timeScale = -acaoDisco.timeScale;
 };
 
 document.getElementById('menu_loop').onchange = function () {
