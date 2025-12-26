@@ -459,3 +459,70 @@ body.menu-open {
 
 
 
+
+/*resposividade pelo produto*/
+
+/* Sticky apenas para desktop */
+.lateral-product-info .position-sticky {
+  position: sticky;
+  top: 120px;
+  will-change: transform;
+}
+
+/* Ajuste do sticky em telas menores */
+@media (max-width: 1200px) {
+  .lateral-product-info .position-sticky {
+    top: 80px; /* menos espaço para telas menores */
+  }
+}
+
+@media (max-width: 992px) { /* tablet */
+  .lateral-product-info .position-sticky {
+    position: relative; /* deixa scroll normal */
+    top: auto;
+  }
+}
+
+/* Grid mobile: canvas 3D em cima, info abaixo */
+@media (max-width: 768px) {
+  .lateral-product-images,
+  .lateral-product-info {
+    display: block;
+    width: 100%;
+  }
+  .lateral-product-images {
+    margin-bottom: 20px; /* espaço entre canvas e info */
+  }
+}
+
+/* Canvas 3D responsivo */
+#meuCanvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Botões/material options adaptáveis */
+.material-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.material-options .material-btn {
+  flex: 1 1 48%; /* 2 por linha no mobile */
+  min-width: 100px;
+}
+
+/* Ajustes de tipografia para mobile */
+@media (max-width: 768px) {
+  .dz-content h1 {
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+  .meta-content .font-40 {
+    font-size: 32px !important;
+  }
+}
+
