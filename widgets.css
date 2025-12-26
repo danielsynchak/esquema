@@ -2740,7 +2740,6 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
     position: relative;
     overflow: hidden;
     margin-bottom: -8px
-    
 }
 
 .contentHero_container[data-align=Centred] {}
@@ -2815,7 +2814,8 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* ajusta a opacidade */
+    background: rgba(0, 0, 0, 0.4);
+    /* ajusta a opacidade */
     pointer-events: none;
 }
 
@@ -2862,7 +2862,8 @@ html:lang(ru-RU) .contentDoublePush_main-subtitle {
 
 .contentHero_titling {
     position: absolute;
-    top: 80%; /* desce o conteúdo */
+    top: 80%;
+    /* desce o conteúdo */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -2917,15 +2918,16 @@ html:lang(ru-RU) .contentHero_title {
 }
 
 
-.contentHero_title{
+.contentHero_title {
     position: absolute;
     bottom: 0%;
-    transform: translate(-35%,-200%);
+    transform: translate(-35%, -200%);
     color: #fff;
     margin-bottom: 16px;
     width: 500px;
     text-align: center;
 }
+
 @media(min-width:992px) {
     .contentHero_title {
         margin-bottom: 24px
@@ -11518,4 +11520,90 @@ html:lang(ru-RU) .top-navigation__card_label--isPlpSearch p {
 .widget-container.no-vertical-margins {
     padding-top: 0 !important;
     padding-bottom: 0 !important
+}
+
+.material-options {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.material-btn {
+    padding: 8px 10px;
+    min-width: 140px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        all 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.15s ease;
+}
+
+/* Hover */
+.material-btn:hover {
+    border-color: #999;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Botão selecionado */
+.material-btn.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Clique */
+.material-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.material-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 34px;
+    /* espaço para seta */
+    position: relative;
+}
+
+
+/* Select integrado */
+.material-label select {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Seta elegante */
+.material-label::after {
+  content: "▾";
+  position: absolute;
+  right: 12px;
+  font-size: 25px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Hover bonito */
+.material-label:hover {
+  border-color: #999;
+}
+
+/* Focus */
+.material-label select:focus {
+  outline: none;
 }

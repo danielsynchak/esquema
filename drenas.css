@@ -21441,6 +21441,10 @@ btn:focus {
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
+.btn-secondary1 {
+  background-color: #ffffff;
+  border-color: var(--secondary);
+}
 
 .btn-secondary:after {
   background-color: var(--primary);
