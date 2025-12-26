@@ -10,7 +10,7 @@
 }
 
 
-
+/*paginaçao dos produtos*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 *{
@@ -128,16 +128,73 @@ body {
 }
 
 
+/* botoes do swipper*/
+/* Botões principais */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 60px;
+  height: 40px;
+  background-color: #c8c8c8;
+  border-radius: 12px;
+  color: #6c5028 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  z-index: 10;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Remove setas padrão do Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none !important;
+}
+
+/* Adiciona setas personalizadas */
+.swiper-button-next {
+  right: 10px;
+}
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Setas customizadas usando CSS puro */
+.swiper-button-next::before {
+  content: '→';
+  font-size: 30px;
+  color: #6c5028;
+}
+.swiper-button-prev::before {
+  content: '←';
+  font-size: 30px;
+  color: #6c5028;
+}
+
+/* Efeito hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #617c98;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  color: #fff;
+}
 
 
 
 
 
 
+/*fim da paginaçao dos produtos*/
 
 
 
 
+
+/*banner carrossel*/
 
 .contentHero_carousel {
     position: relative;
@@ -204,3 +261,201 @@ body {
 display: none; }
 .carousel_btn.next { right: 10px;
 display: none; }
+/*fim do banner carrossel*/
+
+
+/*sidebar*/
+
+/* ===============================
+   SIDEBAR BASE
+================================ */
+.menu__panel {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 340px;
+  max-width: 90%;
+  height: 100vh;
+  background: #ffffff !important;
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
+  z-index: 1001;
+  overflow-y: auto;
+
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #12151b;
+}
+
+/* Sidebar aberta */
+.menu__panel.is-open {
+  transform: translateX(0) !important;
+}
+
+/* ===============================
+   OVERLAY
+================================ */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Bloquear scroll */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* ===============================
+   CONTEÚDO INTERNO
+================================ */
+.menu__panel * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.menu__listWrapper {
+  padding: 20px;
+}
+
+/* ===============================
+   TÍTULOS
+================================ */
+.titleBlock.title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+  margin: 24px 0 12px;
+}
+
+/* ===============================
+   LISTAS
+================================ */
+.menu__panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuSelectionList {
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   LINKS DO MENU
+================================ */
+.menuSelectionList a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #12151b;
+  background: #f8f8f8;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.menuSelectionList a:hover {
+  background: #ececec;
+  transform: translateX(2px);
+}
+
+/* ===============================
+   ÍCONES
+================================ */
+.menu_icon {
+  flex-shrink: 0;
+}
+
+.menu_icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* ===============================
+   ITEM ESPECIAL (NATAL)
+================================ */
+.menuSelectionList.event a {
+  background: #d23948 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.menuSelectionList.event a:hover {
+  background: #b82f3d !important;
+}
+
+/* ===============================
+   MARCAS
+================================ */
+.menuBrandCarousel {
+  margin: 20px 0;
+}
+
+.menuBrandCarousel_wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.menuBrandCarousel_wrapper a {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.menuBrandCarousel_wrapper img {
+  max-width: 140px;
+  border-radius: 14px;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.menu__listFooter {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.menu__listFooter a {
+  background: transparent;
+  padding: 10px 0;
+}
+
+.menu__listFooter .menu_label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ===============================
+   SCROLL
+================================ */
+.menu__panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu__panel::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 6px;
+}
+
+
+
