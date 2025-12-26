@@ -19,11 +19,14 @@ const swiper = new Swiper('.card-wrapper1', {
     0: {
       slidesPerView: 1,
     }, 
-    768: {
+    516: {
       slidesPerView: 2,
     },
-    1024: {
+    768: {
       slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
     },
 }
   
