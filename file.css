@@ -11,4 +11,117 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0px 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list1 .card-item1 .card-link1 {
+    user-select: none;
+    display: block;
+    background: #e2dcd6;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+}
+
+.card-list1 .card-item1 .card-link1:hover {
+    border: 2px solid rgb(64, 44, 17);
+}
+
+.card-list1 .card-link1 .card-image1 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list1 .card-item1{
+    list-style: none;
+}
+
+.card-list1 .card-link1 .badge1 {
+    color: rgb(64, 44, 17);
+    margin: 16px 0px 8px;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    width:fit-content;
+    border-radius: 50px;
+}
+
+.card-list1 .card-link1 .badge1.designer {
+    color:#B22485;
+    background-color:#f7dff5;
+
+}
+.card-list1 .card-link1 .badge1.marketer {
+    color:#b25a2b;
+    background-color:#ffe3d2;
+
+}
+.card-list1 .card-link1 .badge1.gamer {
+    color:#205c20;
+    background-color:#d6f8d6;
+
+}
+.card-list1 .card-link1 .badge1.editor {
+    color:#856404;
+    background-color:#fff3cd;
+
+}
+
+.card-list1 .card-link1 .badge1.developer {
+    color:#4a3f1d;
+    background-color:#fff3cd;
+
+}
+
+
+
+.card-list1 .card-link1 .title1 {
+    font-size: 1.19rem;
+    color: black !important;
+    font-weight: 600;
+}
+
+.card-list1 .card-link1 .card-button1 {
+    height: 35px;
+    width: 35px;
+    color: rgb(64, 44, 17);
+    border-radius: 50%;
+    margin: 30px 0px 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid rgb(64, 44, 17);
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list1 .card-link1:hover .card-button1{
+    color: white;
+    background: rgb(64, 44, 17);
+}

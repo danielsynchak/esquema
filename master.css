@@ -14213,7 +14213,7 @@ html:lang(ru-RU) .footer-newsletter-form label {
 #footer {
   background-color: #00565f;
   position: relative;
-  color: #FFF;
+  color: #FFF !important;
   margin-top: 60px;
 }
 #footer nav {
