@@ -11555,12 +11555,10 @@ html:lang(ru-RU) .top-navigation__card_label--isPlpSearch p {
 
 /* Botão selecionado */
 .material-btn.active {
-    background: #111;
-    color: #fff;
-    border-color: #111;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #000000;
+  color: #ffffff;
+  border-color: #111;
 }
-
 /* Clique */
 .material-btn:active {
     transform: translateY(0);
@@ -11606,4 +11604,41 @@ html:lang(ru-RU) .top-navigation__card_label--isPlpSearch p {
 /* Focus */
 .material-label select:focus {
   outline: none;
+}
+
+
+.material-btnButton {
+    padding: 8px 10px;
+    min-width: 140px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        all 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.15s ease;
+}
+
+/* Hover */
+.material-btnButton:hover {
+    border-color: #999;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Botão selecionado */
+.material-btnButton.active {
+  background: #000000;
+  color: #ffffff;
+  border-color: #111;
+}
+/* Clique */
+.material-btnButton:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
 }
