@@ -38,6 +38,16 @@ let luzes = new THREE.PointLight('white', 100);
 luzes.position.set(5, 3, 5);
 cena.add(luzes);
 
+let luzes1 = new THREE.PointLight('white', 100);
+luzes1.position.set(-5, -3, -5);
+cena.add(luzes1);
+
+let luzes2 = new THREE.PointLight('white', 100);
+luzes2.position.set(-5, -3, -20);
+cena.add(luzes2);
+
+
+
 // ---------- Fundo 360° (esfera invertida) ----------
 let skySphere;
 const loaderTextura = new THREE.TextureLoader();
