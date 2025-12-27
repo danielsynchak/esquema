@@ -912,17 +912,17 @@
                                                 </select>
                                             </label>
                                             <script>
-                                                        document.querySelectorAll("button.material-btn").forEach(button => {//seleciona todos os botões com a class material-btn
-                                                            button.addEventListener("click", () => { //ao executar o clique
-                                                                // Remove active de todos os materiais
-                                                                document.querySelectorAll("button.material-btn")
-                                                                    .forEach(label => label.classList.remove("active"));
+                                                document.querySelectorAll("button.material-btn").forEach(button => {//seleciona todos os botões com a class material-btn
+                                                    button.addEventListener("click", () => { //ao executar o clique
+                                                        // Remove active de todos os materiais
+                                                        document.querySelectorAll("button.material-btn")
+                                                            .forEach(label => label.classList.remove("active"));
 
-                                                                // Ativa apenas o material clicado
-                                                                button.classList.add("active");
-                                                            });
-                                                        });
-                                                    </script>
+                                                        // Ativa apenas o material clicado
+                                                        button.classList.add("active");
+                                                    });
+                                                });
+                                            </script>
 
                                         </div>
 
@@ -1023,44 +1023,44 @@
                                                 <div class="material-options custom-sizes p-0 pb-2">
 
 
-                                                    <button id="btn_BlackMattePlastic"
-                                                        class="material-btnButton" class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">BlackMattePlastic</button>
+                                                    <button id="btn_BlackMattePlastic" class="material-btnButton"
+                                                        class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">BlackMattePlastic</button>
 
 
 
 
-                                                    <button id="btn_BlackGlossyPlasticBaked"
-                                                        class="material-btnButton" class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">BlackGlossyPlasticBaked</button>
+                                                    <button id="btn_BlackGlossyPlasticBaked" class="material-btnButton"
+                                                        class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">BlackGlossyPlasticBaked</button>
 
 
 
 
-                                                    <button id="btn_Steel"
-                                                        class="material-btnButton" class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">Steel</button>
+                                                    <button id="btn_Steel" class="material-btnButton"
+                                                        class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">Steel</button>
 
 
 
 
-                                                    <button id="btn_Glass"
-                                                        class="material-btnButton" class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">Glass</button>
+                                                    <button id="btn_Glass" class="material-btnButton"
+                                                        class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">Glass</button>
 
 
 
 
-                                                    <button id="btn_Plywood"
-                                                        class="material-btnButton" class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">Plywood</button>
+                                                    <button id="btn_Plywood" class="material-btnButton"
+                                                        class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">Plywood</button>
 
 
 
 
-                                                    <button id="btn_RedPlastic"
-                                                        class="material-btnButton" class="d-flex flex-column align-items-center justify-content-center p-relative bg-white">RedPlastic</button>
+                                                    <button id="btn_RedPlastic" class="material-btnButton"
+                                                        class="d-flex flex-column align-items-center justify-content-center p-relative bg-white">RedPlastic</button>
 
 
 
 
-                                                    <button id="btn_SteelScrew"
-                                                        class="material-btnButton" class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">SteelScrew</button>
+                                                    <button id="btn_SteelScrew" class="material-btnButton"
+                                                        class=" d-flex flex-column align-items-center justify-content-center p-relative bg-white">SteelScrew</button>
 
 
                                                     <script>
@@ -1081,8 +1081,15 @@
                                         <div class="d-flex align-items-center mb-2">
 
                                             <a href="#" class="btn btn-secondary1 w-100">
-                                                <i class="bi-cart3 me-2"></i>
-                                                <span>Marcar como favorito ❤️</span>
+                                                <i class="bi-cart3 me-2" ></i>
+                                                <span style="color:black;"><strong>Marcar como favorito</strong></span>
+                                                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"
+                                                    width="22px" height="22px" fill="none">
+                                                    <path stroke="currentColor" stroke-width="1.5"
+                                                        d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451">
+                                                    </path>
+                                                    <title>non-filled</title>
+                                                </svg>
                                             </a>
 
                                         </div>
@@ -1092,7 +1099,7 @@
 
                                             <a href="#" class="btn btn-secondary w-100">
                                                 <i class="bi-cart3 me-2"></i>
-                                                <span>Adicionar ao carrinho 🛒</span>
+                                                <span><strong> Adicionar ao carrinho</strong></span>
                                             </a>
 
                                         </div>

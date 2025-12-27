@@ -21440,11 +21440,14 @@ btn:focus {
 .btn-secondary {
   background-color: var(--secondary);
   border-color: var(--secondary);
+  border-radius: 10px;
 }
 .btn-secondary1 {
   background-color: #ffffff;
   border-color: var(--secondary);
+  border-radius: 10px;
 }
+
 
 .btn-secondary:after {
   background-color: var(--primary);

@@ -38,13 +38,13 @@ let luzes = new THREE.PointLight('white', 100);
 luzes.position.set(5, 3, 5);
 cena.add(luzes);
 
-let luzes1 = new THREE.PointLight('white', 100);
-luzes1.position.set(-5, -3, -5);
-cena.add(luzes1);
+let luzesTraseira = new THREE.PointLight('white', 100);
+luzesTraseira.position.set(-5, -3, -5);
+cena.add(luzesTraseira);
 
-let luzes2 = new THREE.PointLight('white', 100);
-luzes2.position.set(-5, -3, -20);
-cena.add(luzes2);
+let luzesBaixo = new THREE.PointLight('white', 100);
+luzesBaixo.position.set(-5, -3, -20);
+cena.add(luzesBaixo);
 
 
 
@@ -219,3 +219,5 @@ function animar() {
 }
 
 animar();
+
+
