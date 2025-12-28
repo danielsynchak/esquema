@@ -2921,7 +2921,7 @@ html:lang(ru-RU) .contentHero_title {
 .contentHero_title {
     position: absolute;
     bottom: 0%;
-    transform: translate(-35%, -200%);
+    transform: translate(-35%, -100%);
     color: #fff;
     margin-bottom: 16px;
     width: 500px;

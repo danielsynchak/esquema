@@ -107,6 +107,7 @@ body {
     font-size: 1.19rem;
     color: black !important;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .card-list1 .card-link1 .card-button1 {
@@ -126,6 +127,9 @@ body {
     color: white;
     background: rgb(64, 44, 17);
 }
+
+
+
 
 
 /* botoes do swipper*/
@@ -267,7 +271,7 @@ display: none; }
 /*sidebar*/
 
 /* ===============================
-   SIDEBAR BASE
+   SIDEBAR
 ================================ */
 .menu__panel {
   position: fixed !important;
@@ -331,6 +335,59 @@ body.menu-open {
 }
 
 /* ===============================
+   BOTÃO UNIVERSO (100% LARGURA)
+================================ */
+#menuUniverseSelection {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin-bottom: 16px;
+  border: none;
+  background: transparent;
+}
+
+/* Tab interna */
+#menuUniverseSelection .segmentedPart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 14px 20px;
+
+  box-sizing: border-box;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+  color: #12151b;
+
+  background: #f3f4f6;
+  border-radius: 14px;
+
+  transition: background 0.2s ease;
+}
+
+/* Hover */
+#menuUniverseSelection .segmentedPart:hover {
+  background: #e5e7eb;
+}
+
+/* Ativo */
+#menuUniverseSelection .segmentedPart.selected {
+  background: #12151b;
+  color: #ffffff;
+}
+
+/* Ícone */
+#menuUniverseSelection img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* ===============================
    TÍTULOS
 ================================ */
 .titleBlock.title {
@@ -391,7 +448,7 @@ body.menu-open {
 }
 
 /* ===============================
-   ITEM ESPECIAL (NATAL)
+   ITEM ESPECIAL (EVENTO)
 ================================ */
 .menuSelectionList.event a {
   background: #d23948 !important;
@@ -456,6 +513,20 @@ body.menu-open {
   background: #d1d5db;
   border-radius: 6px;
 }
+
+/* Imagem NORMAL */
+#menuUniverseSelection img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: filter 0.2s ease;
+}
+
+/* Imagem BRANCA quando ativo */
+#menuUniverseSelection .segmentedPart.selected img {
+  filter: brightness(0) invert(1);
+}
+
 
 
 
