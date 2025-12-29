@@ -66,7 +66,7 @@ let baseMesh;
 let carregador = new GLTFLoader();
 
 
-carregador.load('blender/RecordPlayerTeste1.gltf', function (gltf) {
+carregador.load('Cenario.gltf', function (gltf) {
     cena.add(gltf.scene);
 
     // encontrar a mesh pelo nome
