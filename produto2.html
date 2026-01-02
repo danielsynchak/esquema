@@ -521,6 +521,18 @@
                                             <option value="2">Repetir</option>
                                             <option value="3">Ping Pong</option>
                                         </select>
+                                        <script>
+                                                    document.querySelectorAll(".material-btn").forEach(button => {//seleciona todos os botões com a class material-btn
+                                                        button.addEventListener("click", () => { //ao executar o clique
+                                                            // Remove active de todos os materiais
+                                                            document.querySelectorAll(".material-btn")
+                                                                .forEach(label => label.classList.remove("active"));
+
+                                                            // Ativa apenas o material clicado
+                                                            button.closest(".material-btn").classList.add("active");
+                                                        });
+                                                    });
+                                                </script>
                                     </div>
                                 
                                     
@@ -528,6 +540,7 @@
 
 
                             </div>
+
 
                             <!-- INFO PRODUTO -->
                             <div class="col-xl-5 col-md-6 col-6 lateral-product-info">
