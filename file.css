@@ -207,6 +207,30 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 518px) {
+    .contentHero_carousel {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    }
+    .contentHero_title {
+    color: white;
+    font-size: 2rem !important;
+}
+
+.contentHero_title {
+    position: absolute;
+    bottom: 0%;
+    transform: translate(-30%, -100%);
+    color: #fff;
+    margin-bottom: 16px;
+    width: 300px;
+    text-align: center;
+}
+  }
+
+
 /* slides */
 .contentHero_slide {
     position: absolute;
