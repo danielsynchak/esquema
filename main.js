@@ -9,18 +9,19 @@ let acaoMover = null;
 let acaoRodar = null;
 let acaoDisco = null;
 
+
 /*
 let materialBlackMatte;
 let materialOther; // vai guardar o material chamado "BlackMattePlastic"
        // exemplo de outro material*/
 let materiais = {};   // vai guardar todos os materiais
-   
+
 
 
 
 // ---------- Câmera ----------
-let camara = new THREE.PerspectiveCamera(70, 800 / 600, 0.1, 1000);
-camara.position.set(0.5, 0.5, 0.5); // posição inicial mais próxima do objeto
+let camara = new THREE.PerspectiveCamera(80, 800 / 600, 0.1, 1000);
+camara.position.set(0.5, 2.6, -0.5); // posição inicial mais próxima do objeto
 
 // ---------- Renderer ----------
 let meuCanvas = document.getElementById('meuCanvas');
@@ -30,28 +31,31 @@ renderer.setClearColor(0x000000, 1); // cor padrão caso a textura falhe
 
 // ---------- OrbitControls ----------
 let controlos = new OrbitControls(camara, renderer.domElement);
-controlos.target.set(0, 0, 0);
+controlos.target.set(0.5, 0.5, -3);
 controlos.update();
+
 
 // ---------- Luzes ----------
 let luzes = new THREE.PointLight('white', 100);
 luzes.position.set(5, 3, 5);
 cena.add(luzes);
+let luzesTraseira= new THREE.PointLight('white', 100);
+luzesTraseira.position.set(0.5, 8, -4);
 
-let luzesTraseira = new THREE.PointLight('white', 100);
-luzesTraseira.position.set(-5, -3, -5);
-cena.add(luzesTraseira);
 
+/*
 let luzesBaixo = new THREE.PointLight('white', 100);
 luzesBaixo.position.set(-5, -3, -20);
 cena.add(luzesBaixo);
-
+*/
+//const LightHelper2 = new THREE.PointLightHelper(luzesTraseira, 0.2)
+//cena.add(LightHelper2)
 
 
 // ---------- Fundo 360° (esfera invertida) ----------
-let skySphere;
+let skySphere;/*
 const loaderTextura = new THREE.TextureLoader();
-loaderTextura.load('images/cena.png', function (texture) {
+loaderTextura.load('images/fundoAzul.jpg', function (texture) {
     const geometria = new THREE.SphereGeometry(50, 60, 40);
     const material = new THREE.MeshBasicMaterial({
         map: texture,
@@ -59,7 +63,17 @@ loaderTextura.load('images/cena.png', function (texture) {
     });
     skySphere = new THREE.Mesh(geometria, material);
     cena.add(skySphere);
+});*/
+
+
+const geometria = new THREE.SphereGeometry(50, 60, 40);
+const material = new THREE.MeshBasicMaterial({
+    color: 0x87CEEB, // azul claro
+    side: THREE.BackSide
 });
+
+skySphere = new THREE.Mesh(geometria, material);
+cena.add(skySphere);
 
 // ---------- Carregamento do GLTF ----------
 let baseMesh;
@@ -108,6 +122,7 @@ carregador.load('Cenario2.gltf', function (gltf) {
 
     let clip3 = THREE.AnimationClip.findByName(gltf.animations, 'VinylDiskAction');
     acaoDisco = misturador.clipAction(clip3);
+    menuLoop.onchange();
 });
 
 /*
@@ -169,13 +184,28 @@ document.getElementById('btn_pause').onclick = function () {
     acaoDisco.paused = !acaoDisco.paused;
 };
 
+let valorLuz=0
 document.getElementById('btn_reverse').onclick = function () {
-    acaoMover.timeScale = -acaoMover.timeScale;
-    acaoRodar.timeScale = -acaoRodar.timeScale;
-    acaoDisco.timeScale = -acaoDisco.timeScale;
+    switch(valorLuz){
+        case 0:
+            cena.add(luzesTraseira);
+            valorLuz=1;
+            break;
+        case 1:
+            cena.remove(luzesTraseira);
+            valorLuz=0;
+            break;
+    }
+    
+    
+
 };
 
-document.getElementById('menu_loop').onchange = function () {
+
+
+const menuLoop = document.getElementById('menu_loop');
+
+menuLoop.onchange = function () {
     switch (this.value) {
         case '1':
             acaoMover.clampWhenFinished = true;
@@ -185,18 +215,24 @@ document.getElementById('menu_loop').onchange = function () {
             acaoDisco.clampWhenFinished = true;
             acaoDisco.setLoop(THREE.LoopOnce);
             break;
+
         case '2':
             acaoMover.setLoop(THREE.LoopRepeat);
             acaoRodar.setLoop(THREE.LoopRepeat);
             acaoDisco.setLoop(THREE.LoopRepeat);
             break;
+
         case '3':
             acaoMover.setLoop(THREE.LoopPingPong);
             acaoRodar.setLoop(THREE.LoopPingPong);
             acaoDisco.setLoop(THREE.LoopPingPong);
             break;
+    
     }
 };
+
+// executa o case 1 ao carregar a página
+//menuLoop.onchange();
 
 // ---------- Animação ----------
 let delta = 0;
@@ -219,5 +255,7 @@ function animar() {
 }
 
 animar();
+
+
 
 

@@ -566,13 +566,14 @@ body.menu-open {
   }
 }
 
-/* Canvas 3D responsivo */
+/*Canvas 3D responsivo */
 #meuCanvas {
   width: 100% !important;
   height: auto !important;
   display: block;
   border-radius: 8px;
 }
+
 
 /* Botões/material options adaptáveis */
 .material-options {
@@ -596,4 +597,71 @@ body.menu-open {
     font-size: 32px !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/*estilização do produto*/
+/* Container */
+
+
+.custom-select1 {
+  position: relative;
+  min-width: 350px;
+}
+
+/* Select base */
+.custom-select1 select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  
+  width: 100%;
+  
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  color: #111827;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.custom-select1 select:hover {
+  border-color: #6366f1;
+}
+
+/* Focus */
+.custom-select1 select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Seta personalizada */
+.custom-select1::after {
+  content: "▾";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+
+
 
