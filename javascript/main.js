@@ -80,7 +80,7 @@ let baseMesh;
 let carregador = new GLTFLoader();
 
 
-carregador.load('Cenario2.gltf', function (gltf) {
+carregador.load('blender/Cenario2.gltf', function (gltf) {
     cena.add(gltf.scene);
 
     // encontrar a mesh pelo nome
